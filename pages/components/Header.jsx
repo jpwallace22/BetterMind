@@ -27,7 +27,7 @@ function Header() {
         </Link>
       </div>
       <nav>
-        <ul className={isActive && "active"}>
+        <ul className={isActive ? "active" : undefined}>
           <li className="dropdown">
             <a
               className={
