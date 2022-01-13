@@ -1,0 +1,24 @@
+:root {
+  /* colors */
+  --white: #f9f9f9;
+  --black: #1f1f1f;
+  --green: #28beac;
+  --dark-blue: #18608b;
+  --light-blue: #1c7fa5;
+  --green-gradient: linear-gradient(
+    90deg,
+    rgba(40, 190, 172, 1) 0%,
+    rgba(28, 127, 165, 1) 66%,
+    rgba(24, 96, 139, 1) 100%
+  );
+  --black-gradient: linear-gradient(
+    90deg,
+    rgba(28, 127, 165, 1) 0%,
+    rgba(31, 31, 31, 1) 100%
+  );
+
+  /* fonts */
+
+  /* elements */
+  --shadow: 0px 9px 11px 1px rgba(0, 0, 0, 0.1);
+}
