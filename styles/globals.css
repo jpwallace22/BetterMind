@@ -103,6 +103,10 @@ header nav > ul > li a {
   padding: 0 1rem 0 0;
   cursor: pointer;
 }
+.caret {
+  position: relative;
+  bottom: -4px;
+}
 
 .overlay {
   width: 100%;

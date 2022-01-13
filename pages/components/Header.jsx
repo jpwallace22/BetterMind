@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import { GoThreeBars } from "react-icons/go";
 import { FaTimes, FaCaretRight, FaCaretDown } from "react-icons/fa";
+import DropdownItem from "./DropdownItem";
 
 function Header() {
   const router = useRouter();
@@ -28,17 +29,7 @@ function Header() {
       </div>
       <nav>
         <ul className={isActive ? "active" : undefined}>
-          <li className="dropdown">
-            <a
-              className={
-                router.pathname.split("/")[1] === "services" ? "active" : null
-              }
-              onClick={({ target }) =>
-                target.parentElement.classList.toggle("show")
-              }
-            >
-              Services {isActive && <FaCaretRight />}
-            </a>
+          <DropdownItem title="Services" menuOpen={isActive}>
             <ul>
               <li>
                 <a href="#">Online Therapy</a>
@@ -50,20 +41,8 @@ function Header() {
                 <a href="#">Couples/Marriage Counseling</a>
               </li>
             </ul>
-          </li>
-          <li className="dropdown">
-            <a
-              className={
-                router.pathname.split("/")[1] === "specialties"
-                  ? "active"
-                  : null
-              }
-              onClick={({ target }) =>
-                target.parentElement.classList.toggle("show")
-              }
-            >
-              Specialties
-            </a>
+          </DropdownItem>
+          <DropdownItem title="Specialties" menuOpen={isActive}>
             <ul>
               <li>
                 <a href="#">Trauma &amp; PTSD</a>
@@ -75,18 +54,8 @@ function Header() {
                 <a href="#">Stress Management</a>
               </li>
             </ul>
-          </li>
-          <li className="dropdown">
-            <a
-              className={
-                router.pathname.split("/")[1] === "about-us" ? "active" : null
-              }
-              onClick={({ target }) =>
-                target.parentElement.classList.toggle("show")
-              }
-            >
-              About Us
-            </a>
+          </DropdownItem>
+          <DropdownItem title="About Us" menuOpen={isActive}>
             <ul>
               <li>
                 <a href="#">Our Philosophy</a>
@@ -95,7 +64,7 @@ function Header() {
                 <a href="#">Our Team</a>
               </li>
             </ul>
-          </li>
+          </DropdownItem>
           <li>
             <a
               className={
