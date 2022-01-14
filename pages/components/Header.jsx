@@ -48,8 +48,8 @@ function Header() {
   });
 
   return (
-    <>
-      <header ref={ref}>
+    <header ref={ref}>
+      <div className="container">
         <div className="logo">
           <Link href="/">
             <a>
@@ -143,9 +143,9 @@ function Header() {
             />
           )}
         </nav>
-      </header>
+      </div>
       {isActive && <div className="overlay"></div>}
-    </>
+    </header>
   );
 }
 

@@ -37,6 +37,7 @@ function DropdownItem({ title, children, menuOpen }) {
           router.pathname.split("/")[1] === "services" ? "active" : null
         }
         onClick={({ target }) => handleClick(target)}
+        onFocus={({ target }) => handleClick(target)}
       >
         {title}{" "}
         {isActive ? (
