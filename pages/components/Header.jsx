@@ -48,97 +48,104 @@ function Header() {
   });
 
   return (
-    <header ref={ref}>
-      <div className="logo">
-        <Link href="/">
-          <a>
-            <h1>BetterMind</h1>
-          </a>
-        </Link>
-      </div>
-      <nav>
-        <ul className={isActive ? "active" : undefined}>
-          <DropdownItem title="Services" menuOpen={isActive}>
-            <ul>
-              <li>
-                <Link href="/online">
-                  <a>Online Therapy</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/individual">
-                  <a>Individual Therapy</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/couples">
-                  <a>Couples/Marriage Counseling</a>
-                </Link>
-              </li>
-            </ul>
-          </DropdownItem>
-          <DropdownItem title="Specialties" menuOpen={isActive}>
-            <ul>
-              <li>
-                <Link href="/trauma">
-                  <a>Trauma &amp; PTSD</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/anxiety">
-                  <a>Anxiety/Depression</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/stress">
-                  <a>Stress Management</a>
-                </Link>
-              </li>
-            </ul>
-          </DropdownItem>
-          <DropdownItem title="About Us" menuOpen={isActive}>
-            <ul>
-              <li>
-                <Link href="/philosophy">
-                  <a>Our Philosophy</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/team">
-                  <a>Our Team</a>
-                </Link>
-              </li>
-            </ul>
-          </DropdownItem>
-          <li>
-            <Link href="/contact">
-              <a
-                className={
-                  router.pathname.split("/")[1] === "contact" ? "active" : null
-                }
-              >
-                Contact
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/team">
-              <a>Subscribe</a>
-            </Link>
-          </li>
-        </ul>
-        {!isActive && (
-          <GoThreeBars
-            className="burger"
-            onClick={() => setIsActive(!isActive)}
-          />
-        )}
-        {isActive && (
-          <FaTimes className="burger" onClick={() => setIsActive(!isActive)} />
-        )}
-      </nav>
+    <>
+      <header ref={ref}>
+        <div className="logo">
+          <Link href="/">
+            <a>
+              <h1>BetterMind</h1>
+            </a>
+          </Link>
+        </div>
+        <nav>
+          <ul className={isActive ? "active" : undefined}>
+            <DropdownItem title="Services" menuOpen={isActive}>
+              <ul>
+                <li>
+                  <Link href="/online">
+                    <a>Online Therapy</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/individual">
+                    <a>Individual Therapy</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/couples">
+                    <a>Couples/Marriage Counseling</a>
+                  </Link>
+                </li>
+              </ul>
+            </DropdownItem>
+            <DropdownItem title="Specialties" menuOpen={isActive}>
+              <ul>
+                <li>
+                  <Link href="/trauma">
+                    <a>Trauma &amp; PTSD</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/anxiety">
+                    <a>Anxiety/Depression</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/stress">
+                    <a>Stress Management</a>
+                  </Link>
+                </li>
+              </ul>
+            </DropdownItem>
+            <DropdownItem title="About Us" menuOpen={isActive}>
+              <ul>
+                <li>
+                  <Link href="/philosophy">
+                    <a>Our Philosophy</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/team">
+                    <a>Our Team</a>
+                  </Link>
+                </li>
+              </ul>
+            </DropdownItem>
+            <li>
+              <Link href="/contact">
+                <a
+                  className={
+                    router.pathname.split("/")[1] === "contact"
+                      ? "active"
+                      : null
+                  }
+                >
+                  Contact
+                </a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/team">
+                <a>Subscribe</a>
+              </Link>
+            </li>
+          </ul>
+          {!isActive && (
+            <GoThreeBars
+              className="burger"
+              onClick={() => setIsActive(!isActive)}
+            />
+          )}
+          {isActive && (
+            <FaTimes
+              className="burger"
+              onClick={() => setIsActive(!isActive)}
+            />
+          )}
+        </nav>
+      </header>
       {isActive && <div className="overlay"></div>}
-    </header>
+    </>
   );
 }
 

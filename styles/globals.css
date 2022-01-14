@@ -3,6 +3,7 @@ body {
   background-color: var(--white);
   line-height: 1.6;
   font-family: "Work Sans", sans-serif;
+  font-weight: 300;
   color: var(--black);
 }
 * {
@@ -25,6 +26,9 @@ a {
   grid-column-gap: 1em;
   grid-row-gap: 1em;
 }
+.flex {
+  display: flex;
+}
 
 img {
   max-width: 100%;
@@ -34,7 +38,11 @@ img {
 /**********************
   HEADER AND NAVBAR
 /**********************/
-
+div.logo {
+  background-color: var(--white);
+  position: relative;
+  z-index: 2;
+}
 header h1 {
   min-width: 190px;
   background: url("../public/images/logo-strict.png") no-repeat center/cover;
@@ -65,7 +73,7 @@ header nav > ul {
   top: -350px;
   left: 0;
   transition: all 0.5s ease;
-  z-index: -1;
+  z-index: 1;
 }
 header nav > ul.active {
   top: 62px;
@@ -108,6 +116,7 @@ header nav > ul > li a {
   opacity: 0.8;
   padding: 0 1rem 0 0;
   cursor: pointer;
+  z-index: 2;
 }
 .caret {
   position: relative;
@@ -121,9 +130,71 @@ header nav > ul > li a {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
   position: absolute;
-  z-index: -2;
+  z-index: -10;
 }
-
+/**********************
+        FOOTER
+/**********************/
+footer {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  padding: 2rem 1rem;
+}
+footer a {
+  color: var(--white);
+}
+.footer-links {
+  grid-column: span 12;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+  justify-content: center;
+}
+.footer-links ul {
+  width: 48%;
+  margin: 0 auto 1rem;
+  display: block;
+  text-align: center;
+}
+.footer-links ul li {
+  font-size: 0.8125rem;
+  font-weight: 400;
+  margin: 0.25rem 0;
+}
+.footer-links ul li:first-child {
+  font-size: 1.125rem;
+}
+.social {
+  grid-column: span 12;
+}
+.social ul {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.social li {
+  margin: 0 15px;
+}
+.footer-logo {
+  grid-column: span 12;
+  background: url("../public/images/footer-logo.png") no-repeat center/contain;
+  min-height: 120px;
+  margin-bottom: 1rem;
+}
+footer p {
+  grid-column: span 12;
+  text-align: center;
+  line-height: 1.2;
+}
+p small {
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--white);
+}
+small a {
+  color: var(--green);
+}
 /******************************************************* MEDIA QUERIES
 /******************************************************* MEDIA QUERIES
 /******************************************************* MEDIA QUERIES */
@@ -151,7 +222,6 @@ header nav > ul > li a {
     left: inherit;
     padding: 0 27px 0 0;
     transition: none;
-    z-index: 0;
     height: 100%;
   }
   header nav > ul.active {
@@ -201,7 +271,6 @@ header nav > ul > li a {
     top: -300px;
     left: 5px;
     transition: all 0.2s ease;
-    z-index: -1;
     box-shadow: var(--shadow);
     border-radius: 8px;
   }

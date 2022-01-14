@@ -6,7 +6,7 @@ function DropdownItem({ title, children, menuOpen }) {
   const [isActive, setIsActive] = useState(false);
   const router = useRouter();
 
-  //closes all other dropdown menus other than the one selected
+  //closes all other dropdown menus other than the one
   const closeAllMenus = (target) => {
     const openMenus = document.querySelectorAll(".show");
     openMenus.forEach((menu) =>
