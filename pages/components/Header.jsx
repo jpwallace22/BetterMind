@@ -111,16 +111,20 @@ function Header() {
             </ul>
           </DropdownItem>
           <li>
-            <a
-              className={
-                router.pathname.split("/")[1] === "contact" ? "active" : null
-              }
-            >
-              Contact
-            </a>
+            <Link href="/contact">
+              <a
+                className={
+                  router.pathname.split("/")[1] === "contact" ? "active" : null
+                }
+              >
+                Contact
+              </a>
+            </Link>
           </li>
           <li>
-            <a>Subscribe</a>
+            <Link href="/team">
+              <a>Subscribe</a>
+            </Link>
           </li>
         </ul>
         {!isActive && (

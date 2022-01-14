@@ -25,7 +25,7 @@
   );
 
   /* fonts */
-
+  --button-font: uppercase 14px bold "Work Sans", sans-serif;
   /* elements */
   --shadow: 0px 9px 11px 1px rgba(0, 0, 0, 0.1);
 }

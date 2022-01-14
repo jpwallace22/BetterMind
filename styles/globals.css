@@ -52,7 +52,7 @@ header nav > ul {
   position: absolute;
   top: -350px;
   left: 0;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
   z-index: -1;
 }
 header nav > ul.active {
@@ -124,11 +124,9 @@ header nav > ul > li a {
     min-height: 74px;
   }
   header h1 {
-    min-width: 190px;
     background: url("../public/images/logo-desktop.png") no-repeat center/cover;
     min-height: 43px;
     margin: 17px 0 0 1rem;
-    text-indent: -99999px;
   }
   .burger {
     display: none;
@@ -144,29 +142,44 @@ header nav > ul > li a {
     z-index: 0;
     height: 100%;
   }
-  header nav > ul > li > a {
-    padding: 10px 27px 0;
-  }
   header nav > ul.active {
     top: inherit;
   }
+  /* top level nav */
   header nav > ul > li {
-    /* top level nav */
     margin: 0 0;
     display: block;
-    width: calc(100% + 20px);
-    padding: 0;
+    max-width: 130px;
+    padding: 0 0;
+    line-height: 4;
     background-color: var(--white);
     transition: none;
+  }
+  header nav > ul > li > a {
+    text-align: center;
+    width: 100%;
+  }
+  /* subscribe button */
+  header nav > ul > li:last-child {
+    border: 4px solid var(--green);
+    border-radius: 15px;
+    position: relative;
+    height: 60%;
+    top: 15px;
+  }
+  header nav > ul > li:last-child:hover {
+    background-color: var(--green);
+  }
+  header nav > ul > li:last-child a {
+    position: relative;
+    font: bold 14px/2.7 "Work Sans", sans-serif;
+    text-transform: uppercase;
   }
   /* header nav > ul > li {
     background: var(--line-gradient) no-repeat 0px 60px;
   } */
   header nav > ul > li:hover {
     background-color: #f2f2f2;
-  }
-  header nav > ul > li a {
-    width: calc(100% + 25px);
   }
   .caret {
     display: none;
@@ -178,11 +191,11 @@ header nav > ul > li a {
     transition: all 0.2s ease;
     z-index: -1;
     box-shadow: var(--shadow);
-    border-radius: 0 0 8px 8px;
+    border-radius: 8px;
   }
   .dropdown.show > ul {
     position: absolute;
-    top: 62px;
+    top: 84px;
   }
   .dropdown > ul > li {
     padding: 0 40px 0 25px;
@@ -190,6 +203,9 @@ header nav > ul > li a {
   }
   .dropdown > ul li:last-child {
     border-radius: 0 0 8px 8px;
+  }
+  .dropdown > ul li:first-child {
+    border-radius: 8px 8px 0 0;
   }
   .dropdown.show > ul > li:hover {
     background-color: #f2f2f2;
