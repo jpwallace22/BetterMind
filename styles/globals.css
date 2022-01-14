@@ -9,7 +9,6 @@ body {
 * {
   box-sizing: border-box;
 }
-
 a {
   color: var(--dark-blue);
   text-decoration: none;
@@ -17,9 +16,6 @@ a {
 /**********************
     UTILITIES
 /**********************/
-.container {
-  max-width: 1400px;
-}
 .grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -34,14 +30,17 @@ img {
   max-width: 100%;
   display: block;
 }
-
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
 /**********************
   HEADER AND NAVBAR
 /**********************/
 div.logo {
   background-color: var(--white);
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 header h1 {
   min-width: 190px;
@@ -50,13 +49,15 @@ header h1 {
   margin: 10px 0 0 1rem;
   text-indent: -99999px;
 }
-header {
+header .container {
   display: flex;
   background-color: var(--white);
   min-height: 62px;
   justify-content: space-between;
   font-size: 1.125rem;
   font-weight: 300;
+}
+header {
   box-shadow: var(--shadow);
 }
 header nav {
@@ -70,10 +71,10 @@ header nav > ul {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: -350px;
+  top: -400px;
   left: 0;
   transition: all 0.5s ease;
-  z-index: 1;
+  z-index: 2;
 }
 header nav > ul.active {
   top: 62px;
@@ -116,7 +117,7 @@ header nav > ul > li a {
   opacity: 0.8;
   padding: 0 1rem 0 0;
   cursor: pointer;
-  z-index: 2;
+  z-index: 3;
 }
 .caret {
   position: relative;
@@ -130,7 +131,7 @@ header nav > ul > li a {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
   position: absolute;
-  z-index: -10;
+  z-index: 1;
 }
 /**********************
         FOOTER
@@ -138,30 +139,33 @@ header nav > ul > li a {
 footer {
   background-color: var(--dark-blue);
   color: var(--white);
-  padding: 2rem 1rem;
+  padding: 4rem 1rem;
 }
 footer a {
   color: var(--white);
 }
-.footer-links {
+footer a:hover {
+  color: var(--green);
+}
+nav.footer-links {
   grid-column: span 12;
   display: flex;
   flex-wrap: wrap;
   gap: 2%;
   justify-content: center;
 }
-.footer-links ul {
+nav.footer-links ul {
   width: 48%;
   margin: 0 auto 1rem;
   display: block;
   text-align: center;
 }
-.footer-links ul li {
+nav.footer-links ul li {
   font-size: 0.8125rem;
   font-weight: 400;
   margin: 0.25rem 0;
 }
-.footer-links ul li:first-child {
+nav.footer-links ul li:first-child {
   font-size: 1.125rem;
 }
 .social {
@@ -199,6 +203,29 @@ small a {
 /******************************************************* MEDIA QUERIES
 /******************************************************* MEDIA QUERIES */
 
+@media screen and (min-width: 700px) {
+  /**********************
+        FOOTER
+/**********************/
+  nav.footer-links {
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding-left: 10%;
+  }
+  nav.footer-links ul {
+    width: 25%;
+    text-align: left;
+  }
+  .social {
+    grid-column: span 6;
+    align-self: center;
+    justify-self: right;
+  }
+  .footer-logo {
+    grid-column: span 6;
+    background-position: 50px 0;
+  }
+}
 @media screen and (min-width: 900px) {
   /**********************
   HEADER AND NAVBAR
@@ -268,11 +295,12 @@ small a {
   }
   .dropdown > ul {
     display: block;
-    top: -300px;
+    top: -450px;
     left: 5px;
     transition: all 0.2s ease;
     box-shadow: var(--shadow);
     border-radius: 8px;
+    z-index: -1;
   }
   .dropdown.show > ul {
     position: absolute;
