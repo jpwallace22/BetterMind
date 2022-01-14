@@ -15,17 +15,17 @@ function Footer() {
             <ul>
               <li>Services</li>
               <li>
-                <Link href="/online">
+                <Link href="/services/online">
                   <a>Online Therapy</a>
                 </Link>
               </li>
               <li>
-                <Link href="/individual">
+                <Link href="/services/individual">
                   <a>Individual Therapy</a>
                 </Link>
               </li>
               <li>
-                <Link href="/couples">
+                <Link href="/services/couples">
                   <a>Couple/Marriage</a>
                 </Link>
               </li>
@@ -33,17 +33,17 @@ function Footer() {
             <ul>
               <li>Specialties</li>
               <li>
-                <Link href="/trauma">
+                <Link href="/specialties/trauma">
                   <a>Trauma &amp; PTSD</a>
                 </Link>
               </li>
               <li>
-                <Link href="/anxiety">
+                <Link href="/specialties/anxiety">
                   <a>Anxiety &amp; Depression</a>
                 </Link>
               </li>
               <li>
-                <Link href="/stress">
+                <Link href="/specialties/stress">
                   <a>Stress Management</a>
                 </Link>
               </li>
@@ -51,12 +51,12 @@ function Footer() {
             <ul>
               <li>About Us</li>
               <li>
-                <Link href="/philosophy">
+                <Link href="/about/philosophy">
                   <a>Our Philosophy</a>
                 </Link>
               </li>
               <li>
-                <Link href="/team">
+                <Link href="/about/team">
                   <a>Meet The Team</a>
                 </Link>
               </li>

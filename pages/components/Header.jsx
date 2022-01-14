@@ -62,17 +62,17 @@ function Header() {
             <DropdownItem title="Services" menuOpen={isActive}>
               <ul>
                 <li>
-                  <Link href="/online">
+                  <Link href="/services/online">
                     <a>Online Therapy</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/individual">
+                  <Link href="/services/individual">
                     <a>Individual Therapy</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/couples">
+                  <Link href="/services/couples">
                     <a>Couples/Marriage Counseling</a>
                   </Link>
                 </li>
@@ -81,17 +81,17 @@ function Header() {
             <DropdownItem title="Specialties" menuOpen={isActive}>
               <ul>
                 <li>
-                  <Link href="/trauma">
+                  <Link href="/specialties/trauma">
                     <a>Trauma &amp; PTSD</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/anxiety">
+                  <Link href="/specialties/anxiety">
                     <a>Anxiety/Depression</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/stress">
+                  <Link href="/specialties/stress">
                     <a>Stress Management</a>
                   </Link>
                 </li>
@@ -100,12 +100,12 @@ function Header() {
             <DropdownItem title="About Us" menuOpen={isActive}>
               <ul>
                 <li>
-                  <Link href="/philosophy">
+                  <Link href="/about/philosophy">
                     <a>Our Philosophy</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/team">
+                  <Link href="/about/team">
                     <a>Our Team</a>
                   </Link>
                 </li>
@@ -125,7 +125,7 @@ function Header() {
               </Link>
             </li>
             <li>
-              <Link href="/team">
+              <Link href="/">
                 <a>Subscribe</a>
               </Link>
             </li>
