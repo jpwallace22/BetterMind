@@ -15,6 +15,22 @@ export default function Home() {
         />
       </Head>
       <Header />
+      <div className="container">
+        <main className="homepage grid">
+          <div className="hero-content px-1">
+            <h2 className="hero">
+              Lorem ipsum headline that takes more than one line
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <button className="btn-primary">free consultation</button>
+          </div>
+          <div className="hero-image"></div>
+          <h2 className="col-12 mx-auto underline">How we can help</h2>
+        </main>
+      </div>
       <Footer />
     </>
   );
