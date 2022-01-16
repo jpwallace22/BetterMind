@@ -8,6 +8,7 @@ import Button from "./components/Button";
 import { FaLaptopMedical, FaMale, FaUserFriends } from "react-icons/fa";
 
 export default function Home() {
+  //! need to fix the bug on the hero CTA
   return (
     <>
       <Head>
