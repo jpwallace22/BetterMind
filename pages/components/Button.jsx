@@ -35,5 +35,6 @@ function Button({ to, className, children }) {
 
 Button.defaultProps = {
   className: "",
+  to: "",
 };
 export default Button;
