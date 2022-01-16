@@ -7,7 +7,7 @@ function Button({ to, className, children }) {
     const mouseX = ((e.clientX - rect.left) / rect.width) * 100;
     const mouseY = ((e.clientY - rect.bottom) / rect.height) * 100;
     e.target.style.background = `radial-gradient(
-      at ${mouseX}% ${mouseY}%,
+      circle at ${mouseX}% ${mouseY + 100}%,
       rgba(40, 190, 172, 1),
       rgba(24, 96, 139, 1)
     )`;

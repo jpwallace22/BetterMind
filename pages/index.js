@@ -6,9 +6,16 @@ import Footer from "./components/Footer";
 import Testimonial from "./components/Testimonial";
 import Button from "./components/Button";
 import { FaLaptopMedical, FaMale, FaUserFriends } from "react-icons/fa";
+import { useState } from "react";
 
 export default function Home() {
-  //! need to fix the bug on the hero CTA
+  const handleClick = (clicked) => {
+    const target = clicked.closest(".testimonial-card");
+    const currentCenter = document.querySelector(".center");
+    currentCenter.classList.remove("center");
+    target.classList.add("center");
+  };
+
   return (
     <>
       <Head>
@@ -29,11 +36,13 @@ export default function Home() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-            <Button to="/contact">Free Consultation</Button>
+            <Button to="/contact" className="mx-auto hero-cta">
+              Free Consultation
+            </Button>
           </div>
           <div className="hero-image"></div>
+          <h2 className="mx-auto underline col-12">How we can help</h2>
           <section className="services px-1 col-12">
-            <h2 className="mx-auto underline">How we can help</h2>
             <article className="card flex">
               <FaLaptopMedical
                 size={70}
@@ -45,7 +54,9 @@ export default function Home() {
                 Lorem ipsum dolor sit amet, conse ctetur adipi scing elit, sed
                 do eiusmod tempor incididunt ut labore et dolore magna{" "}
               </p>
-              <button className="btn-primary mx-auto">Learn more</button>
+              <Button to="/services/online" className="mx-auto">
+                learn more
+              </Button>
             </article>
             <article className="card flex">
               <FaMale
@@ -58,7 +69,9 @@ export default function Home() {
                 Lorem ipsum dolor sit amet, conse ctetur adipi scing elit, sed
                 do eiusmod tempor incididunt ut labore et dolore magna{" "}
               </p>
-              <button className="btn-primary mx-auto">Learn more</button>
+              <Button to="/services/individual" className="mx-auto">
+                learn more
+              </Button>
             </article>
             <article className="card flex">
               <FaUserFriends
@@ -73,7 +86,9 @@ export default function Home() {
                 ipsum dolor sit amet, conse ctetur adipi scing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna{" "}
               </p>
-              <button className="btn-primary mx-auto">Learn more</button>
+              <Button to="/services/couples" className="mx-auto">
+                learn more
+              </Button>
             </article>
           </section>
           <div className="phil-image"></div>
@@ -91,12 +106,13 @@ export default function Home() {
             </p>
           </section>
 
+          <h2 className="underline mx-auto col-12">What people are saying</h2>
           <section className="testimonials col-12 px-1">
-            <h2 className="underline mx-auto">What people are saying</h2>
             <Testimonial
               src="/images/testimonial-image-1.webp"
               alt="young asian woman"
               name="Anita Brown"
+              handleClick={handleClick}
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
@@ -106,6 +122,8 @@ export default function Home() {
               src="/images/testimonial-image-2.webp"
               alt="Cool black man with flower in hair"
               name="Aaron Webber"
+              handleClick={handleClick}
+              className="center"
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
@@ -115,6 +133,7 @@ export default function Home() {
               src="/images/testimonial-image-3.webp"
               alt="huge smile on a brunette"
               name="Jen Sasse"
+              handleClick={handleClick}
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis

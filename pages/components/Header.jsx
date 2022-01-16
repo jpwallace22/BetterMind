@@ -1,8 +1,7 @@
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/router";
-import { GoThreeBars } from "react-icons/go";
-import { FaTimes } from "react-icons/fa";
+import { FaTimes, FaGripLines } from "react-icons/fa";
 import DropdownItem from "./DropdownItem";
 
 function Header() {
@@ -49,8 +48,8 @@ function Header() {
 
   return (
     <header ref={ref}>
-      <div className="container">
-        <div className="logo">
+      <div className={`container ${isActive && "active"}`}>
+        <div className={`logo ${isActive && "active"}`}>
           <Link href="/">
             <a>
               <h1>BetterMind</h1>
@@ -131,7 +130,7 @@ function Header() {
             </li>
           </ul>
           {!isActive && (
-            <GoThreeBars
+            <FaGripLines
               className="burger"
               onClick={() => setIsActive(!isActive)}
             />

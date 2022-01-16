@@ -1,9 +1,12 @@
 import Image from "next/image";
 import Quotes from "../../public/images/quotes.svg";
 
-function Testimonial({ src, alt, children, name }) {
+function Testimonial({ src, alt, children, name, className, handleClick }) {
   return (
-    <div className="testimonial-card card">
+    <div
+      className={`testimonial-card card ${className}`}
+      onClick={({ target }) => handleClick(target)}
+    >
       <Image width={90} height={90} alt={alt} src={src} />
       <p>{children}</p>
       <div>{name}</div>
@@ -21,5 +24,9 @@ function Testimonial({ src, alt, children, name }) {
     </div>
   );
 }
+
+Testimonial.defaultProps = {
+  className: "",
+};
 
 export default Testimonial;
