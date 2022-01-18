@@ -152,6 +152,9 @@ header nav > ul {
 header nav > ul.active {
   top: 55px;
 }
+.dropdown {
+  cursor: pointer;
+}
 header nav > ul > li {
   /* top level nav */
   margin: 0 0;
@@ -300,7 +303,7 @@ main {
 .homepage .hero-image {
   min-height: 350px;
   width: 100%;
-  background: url(../public/images/homepage-hero-min.webp) no-repeat
+  background: url(../public/images/homepage-hero-sm.webp) no-repeat
     calc(50% - 80px) 50% / auto 100%;
   grid-column: span 12;
   transform: scaleX(-1);
@@ -584,6 +587,9 @@ section.philosophy h2 {
     grid-column: 4 / span 6;
     padding-left: 0;
     justify-content: space-between;
+  }
+  nav.footer-links ul:last-child {
+    width: 80px;
   }
   .footer-logo {
     grid-column: span 3;
