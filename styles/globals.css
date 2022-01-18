@@ -292,6 +292,8 @@ small a {
 /**********************/
 main {
   padding: 2rem 0;
+  overflow: hidden;
+  position: relative;
 }
 .hero-content {
   grid-column: span 12;
@@ -303,7 +305,7 @@ main {
 .homepage .hero-image {
   min-height: 350px;
   width: 100%;
-  background: url(../public/images/homepage-hero-sm.webp) no-repeat
+  background: url(../public/images/homepage-hero-min.webp) no-repeat
     calc(50% - 80px) 50% / auto 100%;
   grid-column: span 12;
   transform: scaleX(-1);
@@ -373,8 +375,8 @@ section.philosophy h2 {
     min-width: 300px;
     min-height: 290px;
     position: absolute;
-    right: 0;
-    top: 30%;
+    right: -20px;
+    top: 350px;
     animation: spin infinite 50s linear;
   }
   .hex2 {
@@ -382,8 +384,8 @@ section.philosophy h2 {
     min-width: 250px;
     min-height: 290px;
     position: absolute;
-    top: 160%;
-    left: 0;
+    top: 1320px;
+    left: -80px;
     animation: spin infinite 50s linear;
   }
   .social {
@@ -564,6 +566,10 @@ section.philosophy h2 {
   }
   .homepage .hero-content {
     padding-top: 5rem;
+  }
+  .hex2 {
+    top: 1480px;
+    left: -30px;
   }
   nav.footer-links {
     grid-column: 5 / span 8;

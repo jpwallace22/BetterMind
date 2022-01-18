@@ -10,6 +10,11 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <meta
+            property="og:image"
+            content="images/homepage-hero-min.webp"
+            data-rh="true"
+          />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
           <link
