@@ -57,7 +57,7 @@ export default function Home() {
                   do eiusmod tempor incididunt ut labore et dolore magna{" "}
                 </p>
                 <Button to="/services/online" className="mx-auto">
-                  learn more
+                  Continue
                 </Button>
               </article>
               <article className="card flex">
@@ -72,7 +72,7 @@ export default function Home() {
                   do eiusmod tempor incididunt ut labore et dolore magna{" "}
                 </p>
                 <Button to="/services/individual" className="mx-auto">
-                  learn more
+                  Continue
                 </Button>
               </article>
               <article className="card flex">
@@ -89,7 +89,7 @@ export default function Home() {
                   eiusmod tempor incididunt ut labore et dolore magna{" "}
                 </p>
                 <Button to="/services/couples" className="mx-auto">
-                  learn more
+                  Continue
                 </Button>
               </article>
             </section>

@@ -111,7 +111,7 @@ div.logo.active {
 }
 header h1 {
   min-width: 170px;
-  background: url("../public/images/logo-strict.png") no-repeat center/cover;
+  background: url("../public/images/logo-strict.webp") no-repeat center/cover;
   min-height: 35px;
   margin: 10px 0 0 1rem;
   text-indent: -99999px;
@@ -265,7 +265,7 @@ nav.footer-links ul li:first-child {
 }
 .footer-logo {
   grid-column: span 12;
-  background: url("../public/images/footer-logo.png") no-repeat center/contain;
+  background: url("../public/images/footer-logo.webp") no-repeat center/contain;
   min-height: 120px;
   margin-bottom: 1rem;
 }
@@ -468,7 +468,7 @@ section.philosophy h2 {
     min-height: 40px;
   }
   header h1 {
-    background: url("../public/images/logo-desktop.png") no-repeat center/cover;
+    background: url("../public/images/logo-desktop.webp") no-repeat center/cover;
     min-height: 43px;
     margin: 17px 0 0 1rem;
   }
