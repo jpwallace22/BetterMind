@@ -283,16 +283,6 @@ small a {
 main {
   padding: 2rem 0;
 }
-.hex1 {
-  background: url("../public/images/hexigon.svg") no-repeat;
-  min-width: 300px;
-  min-height: 290px;
-  position: absolute;
-  top: 40%;
-  left: 0;
-  animation: spin infinite 50s linear;
-}
-
 .hero-content {
   grid-column: span 12;
 }
@@ -367,10 +357,15 @@ section.philosophy h2 {
     width: 25%;
     text-align: left;
   }
+
   .hex1 {
-    left: inherit;
+    background: url("../public/images/hexigon.svg") no-repeat;
+    min-width: 300px;
+    min-height: 290px;
+    position: absolute;
     right: 0;
     top: 30%;
+    animation: spin infinite 50s linear;
   }
   .hex2 {
     background: url("../public/images/hexigon.svg") no-repeat;
@@ -392,6 +387,7 @@ section.philosophy h2 {
   }
   .hero-content {
     grid-column: 7 / span 6;
+    max-width: 500px;
   }
   .homepage .hero-image {
     grid-column: span 6;
@@ -416,7 +412,7 @@ section.philosophy h2 {
   }
   section.philosophy {
     grid-column: span 6;
-    grid-row: 4;
+    grid-row: 3;
     place-self: center;
   }
   section.philosophy h2 {
@@ -586,14 +582,20 @@ section.philosophy h2 {
     grid-row: 1;
     align-self: start;
   }
+  .homepage .hero-content {
+    grid-column: 8 / span 4;
+  }
+  .homepage .hero-image {
+    grid-column: span 7;
+  }
 }
 /**********************
       @1400
 /**********************/
 @media screen and (min-width: 1400px) {
-  .homepage .hero-image {
+  /* .homepage .hero-image {
     background-size: contain;
-  }
+  } */
 }
 /**********************
        KEYFRAMES

@@ -73,22 +73,22 @@ function Footer() {
           <nav className="social">
             <ul>
               <li>
-                <a href="https://instagram.com">
+                <a href="https://instagram.com" aria-label="Instagram">
                   <FaInstagram size={40} />
                 </a>
               </li>
               <li>
-                <a href="https://facebook.com">
+                <a href="https://facebook.com" aria-label="Facebook">
                   <FaFacebookF size={40} />
                 </a>
               </li>
               <li>
-                <a href="https://pintrest.com">
+                <a href="https://pintrest.com" aria-label="Pinterest">
                   <FaPinterestP size={40} />
                 </a>
               </li>
               <li>
-                <a href="https://twitter.com">
+                <a href="https://twitter.com" aria-label="Twitter">
                   <FaTwitter size={40} />
                 </a>
               </li>
