@@ -21,8 +21,8 @@ export default function Home() {
       <Head>
         <title>BetterMind Counseling Collective</title>
         <meta
-          name="BetterMind Counseling Collective"
-          content="A collective of Therapists and Doctors delivering cutting edge mental healthcare to the greater San Diego area"
+          name="description"
+          content="A collective of Therapists and Doctors delivering cutting edge mental healthcare to the greater San Diego area. We specialize in Trauma, PTSD, and giving aid to those that have given the most to our country. "
         />
       </Head>
       <Header />

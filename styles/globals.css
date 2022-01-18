@@ -69,7 +69,7 @@ h3 {
 .btn-primary {
   min-height: 50px;
   border: none;
-  background-color: var(--green);
+  background-color: var(--dark-blue);
   color: white;
   font-size: 0.875rem;
   text-transform: uppercase;
@@ -232,19 +232,25 @@ nav.footer-links {
   gap: 2%;
   justify-content: center;
 }
+nav.footer-links a {
+  padding: 15px 8px 15px 0;
+}
 nav.footer-links ul {
-  width: 48%;
+  width: 49%;
   margin: 0 auto 1rem;
   display: block;
   text-align: center;
 }
 nav.footer-links ul li {
-  font-size: 0.8125rem;
+  font-size: 1rem;
   font-weight: 400;
-  margin: 0.25rem 0;
+  margin: 15px 0;
+  line-height: 1.2;
 }
 nav.footer-links ul li:first-child {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
+  margin: 0;
+  font-weight: 600;
 }
 .social {
   grid-column: span 12;
@@ -293,7 +299,7 @@ main {
 .homepage .hero-image {
   min-height: 350px;
   width: 100%;
-  background: url(../public/images/homepage-hero.webp) no-repeat
+  background: url(../public/images/homepage-hero-min.webp) no-repeat
     calc(50% - 80px) 50% / auto 100%;
   grid-column: span 12;
   transform: scaleX(-1);
@@ -546,6 +552,7 @@ section.philosophy h2 {
   }
   .homepage .hero-image {
     min-height: 550px;
+    background-image: url("../public/images/homepage-hero-lg.webp");
   }
   .homepage .hero-content {
     padding-top: 5rem;
@@ -557,6 +564,7 @@ section.philosophy h2 {
   .footer-logo {
     grid-column: span 4;
     grid-row: 1;
+    height: 140px;
   }
   .social {
     grid-column: span 12;

@@ -21,7 +21,7 @@ function Button({ to, className, children }) {
             onPointerMove={(e) => handleMouseOver(e)}
             // clears gradient from mouse over
             onPointerLeave={({ target }) =>
-              (target.style.background = "var(--green)")
+              (target.style.background = "var(--dark-blue)")
             }
             className={`btn-primary`}
           >
