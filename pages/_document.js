@@ -12,7 +12,7 @@ class MyDocument extends Document {
         <Head>
           <meta
             property="og:image"
-            content="images/girl-in-grass.webp"
+            content="https://better-mind.vercel.app/images/homepage-hero-min.webp"
             data-rh="true"
           />
           <meta
