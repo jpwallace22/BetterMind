@@ -12,6 +12,11 @@ class MyDocument extends Document {
         <Head>
           <meta
             property="og:image"
+            content="images/girl-in-grass.webp"
+            data-rh="true"
+          />
+          <meta
+            property="image"
             content="images/homepage-hero-min.webp"
             data-rh="true"
           />
