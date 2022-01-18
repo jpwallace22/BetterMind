@@ -10,7 +10,7 @@ function DropdownItem({ title, children, menuOpen }) {
   const closeAllMenus = (target) => {
     const openMenus = document.querySelectorAll(".show");
     openMenus.forEach((menu) =>
-      menu !== target.parentElement ? menu.classList.remove("show") : null
+      menu !== target ? menu.classList.remove("show") : null
     );
   };
 
@@ -19,7 +19,7 @@ function DropdownItem({ title, children, menuOpen }) {
     if (window.matchMedia("(min-width: 900px)").matches) {
       closeAllMenus(target);
     }
-    target.parentElement.classList.toggle("show");
+    target.classList.toggle("show");
     setIsActive(!isActive);
   };
 
@@ -31,22 +31,18 @@ function DropdownItem({ title, children, menuOpen }) {
   }, [menuOpen]);
 
   return (
-    <li className="dropdown">
-      <a
-        className={
-          router.pathname.split("/")[1] === "services" ? "active" : null
-        }
-        onClick={({ target }) => handleClick(target)}
-        onFocus={({ target }) => handleClick(target)}
-      >
-        {title}{" "}
-        {isActive ? (
-          <FaCaretDown className="caret" />
-        ) : (
-          //cart shows down when open and right when closed
-          <FaCaretRight className="caret" />
-        )}
-      </a>
+    <li
+      className={`dropdown 
+      ${router.pathname.split("/")[1] === "services" ? "active" : null}`}
+      onClick={({ target }) => handleClick(target)}
+    >
+      {title}{" "}
+      {isActive ? (
+        <FaCaretDown className="caret" />
+      ) : (
+        //cart shows down when open and right when closed
+        <FaCaretRight className="caret" />
+      )}
       {children}
     </li>
   );

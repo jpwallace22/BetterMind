@@ -281,7 +281,8 @@ p small {
   color: var(--white);
 }
 small a {
-  color: var(--green);
+  font-weight: 600;
+  padding: 18px 0;
 }
 /**********************
       HOMEPAGE
@@ -509,6 +510,7 @@ section.philosophy h2 {
     position: relative;
     height: 60%;
     top: 15px;
+    margin-left: 0.5rem;
   }
   header nav > ul > li:last-child:hover {
     background-color: var(--green);
@@ -532,6 +534,9 @@ section.philosophy h2 {
     box-shadow: var(--shadow);
     border-radius: 8px;
     z-index: -1;
+  }
+  .dropdown {
+    text-align: center;
   }
   .dropdown.show > ul {
     position: absolute;
