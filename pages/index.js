@@ -26,6 +26,7 @@ export default function Home() {
         />
       </Head>
       <Header />
+
       <div className="container">
         <main className="homepage grid">
           <div className="hero-content px-1">
@@ -145,7 +146,10 @@ export default function Home() {
             Free consultation
           </Button>
         </main>
+        <div className="hex1"></div>
+        <div className="hex2"></div>
       </div>
+
       <Footer />
     </>
   );
