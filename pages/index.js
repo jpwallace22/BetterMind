@@ -24,6 +24,7 @@ export default function Home() {
           name="description"
           content="A collective of Therapists and Doctors delivering cutting edge mental healthcare to the greater San Diego area. We specialize in Trauma, PTSD, and giving aid to those that have given the most to our country. "
         />
+        <link rel="manifest" href="images/site.webmanifest" />
       </Head>
       <Header />
 

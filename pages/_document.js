@@ -17,7 +17,7 @@ class MyDocument extends Document {
           />
           <meta
             property="image"
-            content="images/homepage-hero-min.webp"
+            content="/images/homepage-hero-min.webp"
             data-rh="true"
           />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,24 +29,24 @@ class MyDocument extends Document {
           <link
             rel="apple-touch-icon"
             sizes="180x180"
-            href="images/apple-touch-icon.png"
+            href="/images/apple-touch-icon.png"
           />
           <link
             rel="icon"
             type="image/png"
             sizes="32x32"
-            href="images/favicon-32x32.png"
+            href="/images/favicon-32x32.png"
           />
           <link
             rel="icon"
             type="image/png"
             sizes="16x16"
-            href="images/favicon-16x16.png"
+            href="/images/favicon-16x16.png"
           />
-          <link rel="manifest" href="images/site.webmanifest" />
+
           <link
             rel="mask-icon"
-            href="images/safari-pinned-tab.svg"
+            href="/images/safari-pinned-tab.svg"
             color="#5bbad5"
           />
           <meta name="msapplication-TileColor" content="#00aba9" />

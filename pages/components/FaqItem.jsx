@@ -12,6 +12,7 @@ function FaqItem({ faq }) {
     allPanels.forEach((p) => {
       if (p !== panel) {
         p.style.maxHeight = null;
+        p.style.padding = null;
       }
     });
     allDivs.forEach((d) => {
@@ -31,7 +32,7 @@ function FaqItem({ faq }) {
       caret.style.transform = null;
       div.style.boxShadow = null;
     } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
+      panel.style.maxHeight = panel.scrollHeight + 40 + "px";
       panel.style.padding = "2rem 0 0";
       caret.style.transform = "rotate(90deg)";
       div.style.boxShadow = "var(--shadow)";
@@ -42,7 +43,7 @@ function FaqItem({ faq }) {
     <div className="item-wrapper">
       <div className="faq-q" onClick={({ target }) => handleClick(target)}>
         <FaCaretRight size={30} color="var(--light-blue)" />
-        <h4>{faq.q}</h4>
+        <h3>{faq.q}</h3>
       </div>
       <p>{faq.a}</p>
     </div>

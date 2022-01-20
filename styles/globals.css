@@ -425,6 +425,8 @@ main.interior {
 }
 .faq {
   padding: 1rem 0 0;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 .faq-q {
   display: flex;
@@ -432,9 +434,12 @@ main.interior {
   transition: all 0.5 ease;
   cursor: pointer;
 }
-.faq h4 {
+.faq h3 {
   padding: 1rem;
   cursor: pointer;
+  margin: 0;
+  text-transform: none;
+  font-weight: 600;
 }
 .faq .item-wrapper {
   padding: 1rem;
@@ -565,8 +570,9 @@ main.interior {
   }
   .interior .hero-content {
     grid-column: span 12;
-    max-width: 80%;
+    width: 80%;
     margin: 0 auto;
+    max-width: 1000px;
   }
   .interior .hero-content h2 {
     font-size: 3rem;
@@ -589,8 +595,6 @@ main.interior {
   }
   .faq .item-wrapper {
     border-bottom: 1px solid var(--green);
-    width: 80%;
-    margin: 0 auto;
   }
 }
 /**********************
