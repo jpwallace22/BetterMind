@@ -49,4 +49,11 @@ function FaqItem({ faq }) {
   );
 }
 
+FaqItem.defaultProps = {
+  faq: {
+    q: "",
+    a: "",
+  },
+};
+
 export default FaqItem;
