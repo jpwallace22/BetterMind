@@ -15,6 +15,7 @@ a {
 }
 p {
   margin-bottom: 1.5rem;
+  hyphens: auto;
 }
 h2 {
   font-size: 1.6125rem;
@@ -27,6 +28,11 @@ h3 {
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 1rem;
+}
+h4 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.2;
 }
 /**********************
     UTILITIES
@@ -105,6 +111,7 @@ img {
 div.logo {
   position: relative;
   z-index: 3;
+  cursor: pointer;
 }
 div.logo.active {
   background-color: var(--white);
@@ -331,6 +338,7 @@ section.philosophy h2 {
     calc(50% + 50px) 50%;
   margin: 2rem 0;
   grid-column: span 12;
+  background-size: auto 100%;
 }
 .testimonial-card {
   position: relative;
@@ -355,6 +363,93 @@ section.philosophy h2 {
   position: absolute;
   top: 20px;
   left: calc(50% - 180px);
+}
+/**********************
+       404
+/**********************/
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  background: url("../public/images/hexigon.svg") no-repeat left center/70%;
+}
+.error main {
+  text-align: center;
+  padding: 9rem 0;
+}
+.error h2 {
+  font-size: 8rem;
+  background: linear-gradient(
+    0deg,
+    rgba(28, 127, 165, 1) 0%,
+    rgba(31, 31, 31, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1;
+}
+.error h4 {
+  margin-bottom: 2rem;
+  font-size: 1.125rem;
+}
+/**********************
+       INTERIOR
+/**********************/
+main.interior {
+  padding-top: 0;
+}
+.interior-gradient {
+  grid-column: span 12;
+  min-height: 302px;
+  background: var(--green-gradient);
+}
+.interior h2.hero {
+  text-align: center;
+}
+.interior .hero-image {
+  min-height: 290px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+.couples .hero-image {
+  background-image: url("../public/images/couple-in-session.webp");
+}
+.couples .phil-image {
+  background-image: url("../public/images/couple-in-session-hex.webp");
+  background-position: center;
+}
+.interior section.philosophy + h2 {
+  margin-top: 1rem;
+}
+.faq {
+  padding: 1rem 0 0;
+}
+.faq-q {
+  display: flex;
+  align-items: center;
+  transition: all 0.5 ease;
+  cursor: pointer;
+}
+.faq h4 {
+  padding: 1rem;
+  cursor: pointer;
+}
+.faq .item-wrapper {
+  padding: 1rem;
+}
+.faq svg {
+  transition: transform 0.5s ease;
+}
+.faq p {
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  margin: 0;
+}
+.faq-q.active {
+  box-shadow: var(--shadow);
 }
 /**********************
        @700px
@@ -458,6 +553,44 @@ section.philosophy h2 {
   }
   .testimonial-card.center div {
     font-size: 2rem;
+  }
+  .interior-gradient {
+    min-height: 382px;
+  }
+  .interior .hero-image {
+    min-height: 370px;
+    background-size: cover;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+  .interior .hero-content {
+    grid-column: span 12;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .interior .hero-content h2 {
+    font-size: 3rem;
+    padding-top: 1rem;
+  }
+  .interior .phil-image {
+    grid-column: 1 / span 6;
+    background-position: right;
+  }
+  .interior section.philosophy {
+    grid-column: 7 / span 6;
+    grid-row: 2;
+  }
+  .interior .hex2 {
+    left: inherit;
+    right: -28px;
+  }
+  .interior .hex1 {
+    top: 450px;
+  }
+  .faq .item-wrapper {
+    border-bottom: 1px solid var(--green);
+    width: 80%;
+    margin: 0 auto;
   }
 }
 /**********************

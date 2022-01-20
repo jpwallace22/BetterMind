@@ -18,8 +18,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 > There are currently no API routes in this website
 
-<br>
-
 ## Learn more about Nextjs
 
 To learn more about Next.js, take a look at the following resources:
