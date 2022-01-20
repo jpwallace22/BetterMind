@@ -7,7 +7,7 @@ function FaqItem({ faq }) {
     const caret = div.firstChild;
     const panel = div.nextElementSibling;
     const allPanels = document.querySelectorAll(".faq p");
-    const allCarets = document.querySelectorAll(".faq svg");
+    const allCarets = document.querySelectorAll(".faq span");
     const allDivs = document.querySelectorAll(".faq-q");
     allPanels.forEach((p) => {
       if (p !== panel) {
@@ -22,7 +22,7 @@ function FaqItem({ faq }) {
     });
     allCarets.forEach((c) => {
       if (c !== caret) {
-        c.style.transform = "rotate(0deg)";
+        c.style.transform = null;
       }
     });
 
@@ -42,7 +42,9 @@ function FaqItem({ faq }) {
   return (
     <div className="item-wrapper">
       <div className="faq-q" onClick={({ target }) => handleClick(target)}>
-        <FaCaretRight size={30} color="var(--light-blue)" />
+        <span className="faq-caret">
+          <FaCaretRight size={30} color="var(--light-blue)" />
+        </span>
         <h3>{faq.q}</h3>
       </div>
       <p>{faq.a}</p>

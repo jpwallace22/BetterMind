@@ -332,11 +332,14 @@ section.services h3 {
 section.philosophy h2 {
   text-align: center;
 }
+section.philosophy {
+  padding-top: 1rem;
+}
 .phil-image {
   min-height: 543px;
   background: url("../public/images/girl-in-grass.webp") no-repeat
     calc(50% + 50px) 50%;
-  margin: 2rem 0;
+  margin: 2rem 0 1rem;
   grid-column: span 12;
   background-size: auto 100%;
 }
@@ -385,6 +388,7 @@ section.philosophy h2 {
     rgba(28, 127, 165, 1) 0%,
     rgba(31, 31, 31, 1) 100%
   );
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   line-height: 1;
@@ -416,6 +420,10 @@ main.interior {
 .couples .hero-image {
   background-image: url("../public/images/couple-in-session.webp");
 }
+.individual .hero-image {
+  background-image: url("../public/images/individual-hero.webp");
+  background-position: -350px 0;
+}
 .couples .phil-image {
   background-image: url("../public/images/couple-in-session-hex.webp");
   background-position: center;
@@ -423,10 +431,11 @@ main.interior {
 .interior section.philosophy + h2 {
   margin-top: 1rem;
 }
+
 .faq {
   padding: 1rem 0 0;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 0 auto 3rem;
 }
 .faq-q {
   display: flex;
@@ -440,12 +449,15 @@ main.interior {
   margin: 0;
   text-transform: none;
   font-weight: 600;
+  line-height: 1.3;
+  flex-grow: 1;
 }
 .faq .item-wrapper {
   padding: 1rem;
 }
 .faq svg {
   transition: transform 0.5s ease;
+  align-self: center;
 }
 .faq p {
   max-height: 0px;
@@ -459,7 +471,7 @@ main.interior {
 /**********************
        @700px
 /**********************/
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 750px) {
   nav.footer-links {
     flex-wrap: nowrap;
     justify-content: space-around;
@@ -570,9 +582,8 @@ main.interior {
   }
   .interior .hero-content {
     grid-column: span 12;
-    width: 80%;
+    max-width: 100%;
     margin: 0 auto;
-    max-width: 1000px;
   }
   .interior .hero-content h2 {
     font-size: 3rem;
@@ -592,6 +603,9 @@ main.interior {
   }
   .interior .hex1 {
     top: 450px;
+  }
+  .individual .hero-image {
+    background-position: center;
   }
   .faq .item-wrapper {
     border-bottom: 1px solid var(--green);
@@ -720,6 +734,10 @@ main.interior {
   .social {
     grid-column: span 12;
     justify-self: center;
+  }
+  .interior .hero-content {
+    width: 80%;
+    max-width: 1000px;
   }
 }
 /**********************

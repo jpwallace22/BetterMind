@@ -96,17 +96,22 @@ export default function Home() {
             </section>
             <div className="phil-image"></div>
             <section className="philosophy col-12 px-1">
-              <h2>A headline about our philosophy</h2>
+              <h2>A little about our philosophy</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                These are more words.
+                We don’t have stuffy offices as you might find in a medical
+                practice. Our therapy rooms are warm and cozy. You’ll feel like
+                you’re sitting in our living room.
               </p>
               <p>
-                A Ssecond paragraph of whatever is going to go in this section.
-                Most likely somthing about our philosophy or something like
-                that. And some extra words so the paragraphs arent the same
-                size.
+                We don’t have impersonal therapists who can’t distinguish you
+                and your situation from other clients. We excel in client care
+                and will treat you as the unique person you are.
+              </p>
+              <p>
+                We’ll never judge you. You’ll feel relaxed and cared for by our
+                compassionate and genuine therapists. We respect all
+                relationship types, people with all religious beliefs and from
+                all cultures.
               </p>
             </section>
 

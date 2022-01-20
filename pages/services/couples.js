@@ -15,6 +15,14 @@ function Couples() {
       q: `Who chooses the therapist?`,
       a: `This depends greatly on the dynamic of your relationship and expectations. However, the therapist is typically chosen together and its not recommended to use a prior individual therapist.`,
     },
+    {
+      q: `I’m afraid therapy will just make things worse.`,
+      a: `People don’t really like talking about their problems, or things that are painful, so they sometimes believe that couple therapy will just make a bad situation worse. But the elephant is still in the room, it is not going away by itself. By committing to couples therapy the problems can all be addressed in a rational, neutral setting and while it might not be very easy it really is easier than suffering in silence and usually very successful, however big the problems seem.`,
+    },
+    {
+      q: `Is the therapist going to tell us to break up?`,
+      a: `When a relationship is in trouble most couples really do want to try and save it. The goal of couples therapy is not to make a judgment on whether or not a couple should break up but to help partners understand one another. Some couples do eventually split, but from a much better place than they would have done. Many do give it that ‘extra go’ though and with great success. But that is always up to them.`,
+    },
   ];
 
   return (
@@ -88,17 +96,23 @@ function Couples() {
             </section>
             <div className="phil-image"></div>
             <section className="philosophy col-12 px-1">
-              <h2>The BetterMind approach</h2>
+              <h2>Our approach</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                These are more words.
+                Cognitive-behavioral therapy (CBT), which was originally
+                designed for individual use to treat such issues as anxiety,
+                depression , substance abuse, and eating disorders, centers
+                around the notion that your thoughts influence your behaviors.
               </p>
               <p>
-                A Ssecond paragraph of whatever is going to go in this section.
-                Most likely somthing about our philosophy or something like
-                that. And some extra words so the paragraphs arent the same
-                size.
+                A CBT therapist will initially focus on identifying what each
+                partner is thinking about the conflicts that have brought them
+                to couples counseling. One&apos;s beliefs may be challenged in
+                order to help each partner develop better methods of
+                communicating.
+              </p>
+              <p>
+                Research has shown that CBT is effective in treating
+                communication difficulties as well as conflict resolution.
               </p>
             </section>
 
