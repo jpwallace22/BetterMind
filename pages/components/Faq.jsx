@@ -10,4 +10,8 @@ function Faq({ faqList, children }) {
   );
 }
 
+Faq.defaultProps = {
+  faqList: [],
+};
+
 export default Faq;
