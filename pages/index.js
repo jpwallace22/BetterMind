@@ -31,9 +31,7 @@ export default function Home() {
 
       <main className="homepage grid">
         <div className="hero-content px-1">
-          <h2 className="hero">
-            Lorem ipsum headline that takes more than one line
-          </h2>
+          <h2 className="hero">Come see us you son of a bitch!</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
