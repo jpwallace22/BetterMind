@@ -424,8 +424,28 @@ main.interior {
   background-image: url("../public/images/individual-hero.webp");
   background-position: -350px 0;
 }
+.online .hero-image {
+  background-image: url("../public/images/online-hero.webp");
+  background-position: -550px 0;
+}
+.trauma .hero-image {
+  background-image: url("../public/images/trauma-hero.webp");
+  background-position: -290px 0;
+}
+.anxiety .hero-image {
+  background-image: url("../public/images/anxiety-hero.webp");
+  background-position: -290px 0;
+}
 .couples .phil-image {
   background-image: url("../public/images/couple-in-session-hex.webp");
+  background-position: center;
+}
+.online .phil-image {
+  background-image: url("../public/images/online-phil.webp");
+  background-position: center;
+}
+.trauma .phil-image {
+  background-image: url("../public/images/trauma-phil.webp");
   background-position: center;
 }
 .interior section.philosophy + h2 {
@@ -605,6 +625,15 @@ main.interior {
     top: 450px;
   }
   .individual .hero-image {
+    background-position: center;
+  }
+  .online .hero-image {
+    background-position: center;
+  }
+  .trauma .hero-image {
+    background-position: center;
+  }
+  .anxiety .hero-image {
     background-position: center;
   }
   .faq .item-wrapper {
