@@ -451,6 +451,9 @@ main.interior {
 .interior section.philosophy + h2 {
   margin-top: 1rem;
 }
+.interior section.services + h2 {
+  margin-top: 3rem;
+}
 
 .faq {
   padding: 1rem 0 0;
@@ -542,12 +545,20 @@ main.interior {
   .hero-cta {
     margin: 0;
   }
-  section.services {
+  .homepage section.services {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  section.services article {
+  .homepage section.services article {
+    width: 32%;
+  }
+  section.services:last-of-type {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  section.services:last-of-type article {
     width: 32%;
   }
   .phil-image {
@@ -767,6 +778,14 @@ main.interior {
   .interior .hero-content {
     width: 80%;
     max-width: 1000px;
+  }
+  .interior section.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .interior section.services article {
+    width: 32%;
   }
 }
 /**********************

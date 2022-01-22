@@ -4,8 +4,19 @@ import Button from "../components/Button";
 import Faq from "../components/Faq";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import ThreeWhats from "../components/ThreeWhats";
 
 function Couples() {
+  const whatToExpect = `Most couples come away from therapy with greater knowledge of
+  their relational patterns and with the necessary skills to
+  effectively communicate and problem-solve with their partners.`;
+  const whatItIs = `Couples therapy can resolve a current problem, prevent an
+  exacerbation of problems or simply provide a “check-up” for a
+  happy couple that is experiencing a period of transition or
+  increased stress.`;
+  const forMe = `Couples therapy is a type of psychotherapy in which a licensed
+  therapist with clinical experience working with couples helps
+  people involved in a romantic relationship.`;
   const coupleFaq = [
     {
       q: `What if your partner doesn't want to do therapy?`,
@@ -43,6 +54,15 @@ function Couples() {
         <div className="hero-content px-1">
           <h2 className="hero">Couples &amp; Marriage Counseling</h2>
           <p>
+            Wondering where all the romance went? Or feeling stuck in a
+            relationship where “taking breaks” and the “silent treatment” just
+            aren’t working? Maybe you’re feeling like your intimacy or sex life
+            is stale? Maybe there’s been infidelity? Or maybe you just need a
+            higher level of understanding and communication? There are many
+            reasons to seek couples counseling. Whatever the reason, know that
+            you are not alone.{" "}
+          </p>
+          <p>
             We all know romantic relationships are hard work. Like cars, they
             require regular maintenance to keep them running well. If there is a
             problem, it’s best to have it repaired right away to avoid further
@@ -52,48 +72,11 @@ function Couples() {
 
         <div className="container col-12">
           <div className="grid">
-            <section className="services px-1 col-12">
-              <article className="card flex">
-                <FaSearch
-                  size={70}
-                  className="mx-auto"
-                  color={"var(--light-blue)"}
-                />
-                <h3 className="mx-auto">What to expect</h3>
-                <p>
-                  Most couples come away from therapy with greater knowledge of
-                  their relational patterns and with the necessary skills to
-                  effectively communicate and problem-solve with their partners.{" "}
-                </p>
-              </article>
-              <article className="card flex">
-                <FaQuestion
-                  size={70}
-                  className="mx-auto"
-                  color={"var(--light-blue)"}
-                />
-                <h3 className="mx-auto">Is it for us?</h3>
-                <p>
-                  Couples therapy can resolve a current problem, prevent an
-                  exacerbation of problems or simply provide a “check-up” for a
-                  happy couple that is experiencing a period of transition or
-                  increased stress.{" "}
-                </p>
-              </article>
-              <article className="card flex">
-                <FaClipboardCheck
-                  size={70}
-                  className="mx-auto"
-                  color={"var(--light-blue)"}
-                />
-                <h3 className="mx-auto">What it is</h3>
-                <p>
-                  Couples therapy is a type of psychotherapy in which a licensed
-                  therapist with clinical experience working with couples helps
-                  people involved in a romantic relationship.{" "}
-                </p>
-              </article>
-            </section>
+            <ThreeWhats
+              whatItIs={whatItIs}
+              whatToExpect={whatToExpect}
+              forMe={forMe}
+            />
             <div className="phil-image"></div>
             <section className="philosophy col-12 px-1">
               <h2>Our approach</h2>

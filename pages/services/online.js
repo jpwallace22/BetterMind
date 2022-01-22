@@ -4,9 +4,26 @@ import Button from "../components/Button";
 import Faq from "../components/Faq";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import ThreeWhats from "../components/ThreeWhats";
 
 function Online() {
   const title = "Online Therapy";
+  const whatItIs = `Distance doesn’t have to be a barrier to getting the support
+  you deserve. We are physically located in San Diego, but have
+  clients that live all over the state. With online therapy, we
+  can do all the same things we would do in person, including
+  trauma processing, somatic work, and EMDR!`;
+  const forMe = `It eliminates commute times! There’s no more sitting in
+  traffic or factoring in commute time to go to an office. You
+  can meet during your lunch hour, in between meetings, when the
+  kids are napping, or any other hour-long window you have that
+  may have been otherwise lost to aimlessly scrolling on your
+  phone.`;
+  const whatToExpect = `Before each session, I’ll send a link that you can access on
+  your phone, computer, or tablet. The link is generated through
+  the secure and HIPPA-compliant platform called SimplePractice.
+  The first time you use it, it will ask you to connect to your
+  device’s microphone and camera, and then you’ll be good to go!`;
 
   const individualFaq = [
     {
@@ -73,54 +90,11 @@ function Online() {
 
         <div className="container col-12">
           <div className="grid">
-            <section className="services px-1 col-12">
-              <article className="card flex">
-                <FaSearch
-                  size={70}
-                  className="mx-auto"
-                  color={"var(--light-blue)"}
-                />
-                <h3 className="mx-auto">What to expect</h3>
-                <p>
-                  Before each session, I’ll send a link that you can access on
-                  your phone, computer, or tablet. The link is generated through
-                  the secure and HIPPA-compliant platform called SimplePractice.
-                  The first time you use it, it will ask you to connect to your
-                  device’s microphone and camera, and then you’ll be good to go!{" "}
-                </p>
-              </article>
-              <article className="card flex">
-                <FaQuestion
-                  size={70}
-                  className="mx-auto"
-                  color={"var(--light-blue)"}
-                />
-                <h3 className="mx-auto">Is it for me?</h3>
-                <p>
-                  It eliminates commute times! There’s no more sitting in
-                  traffic or factoring in commute time to go to an office. You
-                  can meet during your lunch hour, in between meetings, when the
-                  kids are napping, or any other hour-long window you have that
-                  may have been otherwise lost to aimlessly scrolling on your
-                  phone.{" "}
-                </p>
-              </article>
-              <article className="card flex">
-                <FaClipboardCheck
-                  size={70}
-                  className="mx-auto"
-                  color={"var(--light-blue)"}
-                />
-                <h3 className="mx-auto">What it is</h3>
-                <p>
-                  Distance doesn’t have to be a barrier to getting the support
-                  you deserve. We are physically located in San Diego, but have
-                  clients that live all over the state. With online therapy, we
-                  can do all the same things we would do in person, including
-                  trauma processing, somatic work, and EMDR!{" "}
-                </p>
-              </article>
-            </section>
+            <ThreeWhats
+              whatItIs={whatItIs}
+              whatToExpect={whatToExpect}
+              forMe={forMe}
+            />
             <div className="phil-image"></div>
             <section className="philosophy col-12 px-1">
               <h2>The BetterMind approach</h2>

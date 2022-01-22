@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Footer from "./components/Footer";
 import Testimonial from "./components/Testimonial";
+import ThreeServices from "./components/ThreeServices";
 import Button from "./components/Button";
 import { FaLaptopMedical, FaMale, FaUserFriends } from "react-icons/fa";
 import { useState } from "react";
@@ -45,55 +46,7 @@ export default function Home() {
         <div className="container col-12">
           <div className="grid">
             <h2 className="mx-auto underline col-12">How we can help</h2>
-            <section className="services px-1 col-12">
-              <article className="card flex">
-                <FaLaptopMedical
-                  size={70}
-                  className="mx-auto"
-                  color={"var(--light-blue)"}
-                />
-                <h3 className="mx-auto">Telehealth</h3>
-                <p className="three-lines">
-                  Lorem ipsum dolor sit amet, conse ctetur adipi scing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna{" "}
-                </p>
-                <Button to="/services/online" className="mx-auto">
-                  Continue
-                </Button>
-              </article>
-              <article className="card flex">
-                <FaMale
-                  size={70}
-                  className="mx-auto"
-                  color={"var(--light-blue)"}
-                />
-                <h3 className="mx-auto">Individual</h3>
-                <p className="three-lines">
-                  Lorem ipsum dolor sit amet, conse ctetur adipi scing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna{" "}
-                </p>
-                <Button to="/services/individual" className="mx-auto">
-                  Continue
-                </Button>
-              </article>
-              <article className="card flex">
-                <FaUserFriends
-                  size={70}
-                  className="mx-auto"
-                  color={"var(--light-blue)"}
-                />
-                <h3 className="mx-auto">Couples</h3>
-                <p className="three-lines">
-                  Lorem ipsum dolor sit amet, conse ctetur adipi scing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna Lorem
-                  ipsum dolor sit amet, conse ctetur adipi scing elit, sed do
-                  eiusmod tempor incididunt ut labore et dolore magna{" "}
-                </p>
-                <Button to="/services/couples" className="mx-auto">
-                  Continue
-                </Button>
-              </article>
-            </section>
+            <ThreeServices />
             <div className="phil-image"></div>
             <section className="philosophy col-12 px-1">
               <h2>A little about our philosophy</h2>

@@ -1,12 +1,27 @@
 import Head from "next/head";
-import { FaClipboardCheck, FaQuestion, FaSearch } from "react-icons/fa";
 import Button from "../components/Button";
 import Faq from "../components/Faq";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import ThreeWhats from "../components/ThreeWhats";
 
 function Individual() {
   const title = "Individual Therapy";
+  const whatItIs = `Individual counseling is about developing self-awareness,
+  solving problems, and unlocking your untapped potential by
+  employing techniques from Cognitive Behavioral Therapy (CBT)
+  and Solution-Focused Therapy (SFT), two of the most clinically
+  effective practices supported by psychological research.`;
+  const forMe = ` Individual therapy can help you learn how to: Move closer to
+  your personal, career, and relational relationship goals. Cope
+  effectively with stress and worry. Overcome depression and
+  grief. Improve your social skills and your ability to connect
+  to others.`;
+  const whatToExpect = `Our first session is to listen to your concerns, based on the
+  information you provide, recommendations will be made
+  regarding the focus and desired outcomes of counseling. The
+  strategies and approach used during counseling will be
+  determined by your specific goals and personality type.`;
 
   const individualFaq = [
     {
@@ -67,53 +82,11 @@ function Individual() {
 
         <div className="container col-12">
           <div className="grid">
-            <section className="services px-1 col-12">
-              <article className="card flex">
-                <FaSearch
-                  size={70}
-                  className="mx-auto"
-                  color={"var(--light-blue)"}
-                />
-                <h3 className="mx-auto">What to expect</h3>
-                <p>
-                  Our first session is to listen to your concerns, based on the
-                  information you provide, recommendations will be made
-                  regarding the focus and desired outcomes of counseling. The
-                  strategies and approach used during counseling will be
-                  determined by your specific goals and personality type.{" "}
-                </p>
-              </article>
-              <article className="card flex">
-                <FaQuestion
-                  size={70}
-                  className="mx-auto"
-                  color={"var(--light-blue)"}
-                />
-                <h3 className="mx-auto">Is it for me?</h3>
-                <p>
-                  Individual therapy can help you learn how to: Move closer to
-                  your personal, career, and relational relationship goals. Cope
-                  effectively with stress and worry. Overcome depression and
-                  grief. Improve your social skills and your ability to connect
-                  to others.{" "}
-                </p>
-              </article>
-              <article className="card flex">
-                <FaClipboardCheck
-                  size={70}
-                  className="mx-auto"
-                  color={"var(--light-blue)"}
-                />
-                <h3 className="mx-auto">What it is</h3>
-                <p>
-                  Individual counseling is about developing self-awareness,
-                  solving problems, and unlocking your untapped potential by
-                  employing techniques from Cognitive Behavioral Therapy (CBT)
-                  and Solution-Focused Therapy (SFT), two of the most clinically
-                  effective practices supported by psychological research.{" "}
-                </p>
-              </article>
-            </section>
+            <ThreeWhats
+              whatItIs={whatItIs}
+              whatToExpect={whatToExpect}
+              forMe={forMe}
+            />
             <div className="phil-image"></div>
             <section className="philosophy col-12 px-1">
               <h2>The BetterMind approach</h2>

@@ -4,9 +4,26 @@ import Button from "../components/Button";
 import Faq from "../components/Faq";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import ThreeServices from "../components/ThreeServices";
+import ThreeWhats from "../components/ThreeWhats";
 
 function Trauma() {
   const title = "Trauma & PTSD";
+  const whatToExpect = `Trauma therapy may include learning new self-care skills,
+  including setting boundaries with loved ones, taking quiet
+  time for yourself, and learning new coping skills. Trauma
+  therapy will teach you new ways to calm and soothe yourself
+  when this happens.`;
+  const whatItIs = ` Trauma is an emotional response to a terrible event like an
+  accident, rape or natural disaster. Immediately after the
+  event, shock and denial are typical. Longer term reactions
+  include unpredictable emotions, flashbacks, strained
+  relationships and even physical symptoms like headaches or
+  nausea.`;
+  const forMe = `Trauma experienced when young affects the mental well-being of
+  individuals throughout life. If you are wondering, “Is this
+  kind of therapy right for me?” and you have experienced trauma
+  in your life, the answer is a resounding yes.`;
 
   const individualFaq = [
     {
@@ -72,53 +89,12 @@ function Trauma() {
 
         <div className="container col-12">
           <div className="grid">
-            <section className="services px-1 col-12">
-              <article className="card flex">
-                <FaSearch
-                  size={70}
-                  className="mx-auto"
-                  color={"var(--light-blue)"}
-                />
-                <h3 className="mx-auto">What to expect</h3>
-                <p>
-                  Trauma therapy may include learning new self-care skills,
-                  including setting boundaries with loved ones, taking quiet
-                  time for yourself, and learning new coping skills. Trauma
-                  therapy will teach you new ways to calm and soothe yourself
-                  when this happens.{" "}
-                </p>
-              </article>
-              <article className="card flex">
-                <FaQuestion
-                  size={70}
-                  className="mx-auto"
-                  color={"var(--light-blue)"}
-                />
-                <h3 className="mx-auto">Is it for me?</h3>
-                <p>
-                  Trauma experienced when young affects the mental well-being of
-                  individuals throughout life. If you are wondering, “Is this
-                  kind of therapy right for me?” and you have experienced trauma
-                  in your life, the answer is a resounding yes.{" "}
-                </p>
-              </article>
-              <article className="card flex">
-                <FaClipboardCheck
-                  size={70}
-                  className="mx-auto"
-                  color={"var(--light-blue)"}
-                />
-                <h3 className="mx-auto">What it is</h3>
-                <p>
-                  Trauma is an emotional response to a terrible event like an
-                  accident, rape or natural disaster. Immediately after the
-                  event, shock and denial are typical. Longer term reactions
-                  include unpredictable emotions, flashbacks, strained
-                  relationships and even physical symptoms like headaches or
-                  nausea.{" "}
-                </p>
-              </article>
-            </section>
+            <ThreeWhats
+              whatItIs={whatItIs}
+              whatToExpect={whatToExpect}
+              forMe={forMe}
+            />
+
             <div className="phil-image"></div>
             <section className="philosophy col-12 px-1">
               <h2>The BetterMind approach</h2>
@@ -140,6 +116,8 @@ function Trauma() {
                 examples of these bottom-up approaches.
               </p>
             </section>
+            <h2 className="underline mx-auto col-12">Our services</h2>
+            <ThreeServices />
 
             <h2 className="underline mx-auto col-12">
               Frequently asked questions
