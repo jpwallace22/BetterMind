@@ -7,11 +7,7 @@ import ThreeWhats from "../components/ThreeWhats";
 
 function Individual() {
   const title = "Individual Therapy";
-  const whatItIs = `Individual counseling is about developing self-awareness,
-  solving problems, and unlocking your untapped potential by
-  employing techniques from Cognitive Behavioral Therapy (CBT)
-  and Solution-Focused Therapy (SFT), two of the most clinically
-  effective practices supported by psychological research.`;
+  const whatItIs = `Individual therapy can help you learn how to: Move closer to your personal, career, and relational relationship goals. Cope effectively with stress and worry. Overcome depression and grief. Improve your social skills and your ability to connect to others.`;
   const forMe = ` Individual therapy can help you learn how to: Move closer to
   your personal, career, and relational relationship goals. Cope
   effectively with stress and worry. Overcome depression and

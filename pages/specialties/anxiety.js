@@ -4,30 +4,40 @@ import Button from "../components/Button";
 import Faq from "../components/Faq";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import ThreeWhats from "../components/ThreeWhats";
+import ThreeServices from "../components/ThreeServices";
+
 
 function Anxiety() {
+
+  //TODO need to change the phil image
+
   const title = "Anxiety & Depression";
+   const whatToExpect = `Cognitive behavioral therapy (CBT) is a type of psychotherapeutic treatment that helps people learn how to identify and change destructive or disturbing thought patterns that have a negative influence on behavior and emotions. CBT focuses on changing the automatic negative thoughts that can contribute to and worsen emotional difficulties, depression, and anxiety.`;
+  const whatItIs = `Anxiety disorders are real, serious medical conditions. Anxiety disorders are the most common and pervasive mental disorders in the United States. 
+Depression is a condition in which a person feels discouraged, sad, hopeless, unmotivated, or disinterested in life in general for more than two weeks and when the feelings interfere with daily activities`;
+  const forMe = `Having a low mood or feeling on edge are common experiences for us all. When these moods persist, it may be that you are experiencing depression or anxiety – or both. These self tests ask some important questions that can help you take stock of where you are at so you can make a plan for feeling better sooner.`;
 
   const individualFaq = [
     {
-      q: ``,
-      a: ``,
+      q: `Do I have an anxiety disorder?`,
+      a: `Anxiety is a normal part of living. It’s a biological reaction—the body’s way of telling us something isn’t right. It keeps us from harm’s way and prepares us to act quickly in the face of danger. But if your anxiety becomes overwhelming and persistent, or if it interferes with your regular daily activities, or even makes them impossible, you may have an anxiety disorder.`,
     },
     {
-      q: ``,
-      a: ``,
+      q: `What causes anxiety disorders?`,
+      a: `Researchers are learning that anxiety disorders run in families, and that they have a biological basis, much like allergies or diabetes and other disorders. Anxiety disorders may develop from a complex set of risk factors, including genetics, brain chemistry, personality, and life events. Find out more.`,
     },
     {
-      q: ``,
-      a: ``,
+      q: `What is the difference between depression and sadness?`,
+      a: `Experiencing sadness at one time or another is part of the normal human experience. However, depression is more than the occasional sadness that people experience. When an individual suffers from depression, the sadness tends to be more pervasive or long lasting, and can be accompanied by one or more of the following: decreased interest in pleasurable activities, feelings of hopelessness, low self-worth, excessive guilt, decrease in energy, concentration difficulties, appetite changes, sleep difficulty or excessive sleep, headaches, body aches and pains, and/or thoughts of suicide.`,
     },
     {
-      q: ``,
-      a: ``,
+      q: `Can depression affect children?`,
+      a: `Just like adults, children can suffer from depression that significantly impairs their social, academic and/or other domains of functioning. For more information on childhood depression, check out this ADAA blog post`,
     },
     {
-      q: ``,
-      a: ``,
+      q: `What is postpartum depression?`,
+      a: `When feelings of sadness, low mood, or emptiness after the birth of the baby are significant and persists for 2 weeks or longer, postpartum depression may be present. It may be accompanied by hopelessness, crying spells, decrease in interest or motivation, worthlessness, decreased energy, thoughts of suicide, thoughts of hurting the baby, lack of interest in the baby, sleep difficulty or excessive sleep, appetite increase or decrease, and/or concentration, memory difficulties. Postpartum depression can affect both the mother and the baby in various, significant ways. Timely treatment is important.`,
     },
     // {
     //   q:``,
@@ -53,94 +63,34 @@ function Anxiety() {
         <div className="hero-content px-1">
           <h2 className="hero">{title}</h2>
           <p>
-            Trauma wears many faces. It can be abandonment by a parental figure
-            from a young age that left you feeling like you’re a burden or
-            unlovable, sexual abuse/assault, physical or verbal abuse from a
-            loved one, combat overseas, or even not being in combat and laying
-            witness to the horrors of war.{" "}
+           In general‚ about 1 out of every 6 adults will have depression at some time in their life. Depression affects about 16 million American adults every year. Anyone can get depressed, and depression can happen at any age and in any type of person.{" "}
           </p>
           <p>
-            Trying to cope with the pain of these experiences isn’t easy.
-            Perhaps you go on dates but feel nervous or scared that you might
-            find yourself in a dangerous situation. Or maybe you’re irritable or
-            angry at work, and the guilt you’re experiencing is projecting anger
-            onto people you love and care about in your life. Feeling trapped
-            because you don’t do what you need to do to feel better (even if you
-            know what those things are!).
+            Many people who experience depression also have other mental health conditions. Anxiety disorders often go hand in hand with depression. People who have anxiety disorders struggle with intense and uncontrollable feelings of anxiety, fear, worry, and/or panic. These feelings can interfere with daily activities and may last for a long time.
           </p>
         </div>
 
         <div className="container col-12">
           <div className="grid">
-            <section className="services px-1 col-12">
-              <article className="card flex">
-                <FaSearch
-                  size={70}
-                  className="mx-auto"
-                  color={"var(--light-blue)"}
-                />
-                <h3 className="mx-auto">What to expect</h3>
-                <p>
-                  Trauma therapy may include learning new self-care skills,
-                  including setting boundaries with loved ones, taking quiet
-                  time for yourself, and learning new coping skills. Trauma
-                  therapy will teach you new ways to calm and soothe yourself
-                  when this happens.{" "}
-                </p>
-              </article>
-              <article className="card flex">
-                <FaQuestion
-                  size={70}
-                  className="mx-auto"
-                  color={"var(--light-blue)"}
-                />
-                <h3 className="mx-auto">Is it for me?</h3>
-                <p>
-                  Trauma experienced when young affects the mental well-being of
-                  individuals throughout life. If you are wondering, “Is this
-                  kind of therapy right for me?” and you have experienced trauma
-                  in your life, the answer is a resounding yes.{" "}
-                </p>
-              </article>
-              <article className="card flex">
-                <FaClipboardCheck
-                  size={70}
-                  className="mx-auto"
-                  color={"var(--light-blue)"}
-                />
-                <h3 className="mx-auto">What it is</h3>
-                <p>
-                  Trauma is an emotional response to a terrible event like an
-                  accident, rape or natural disaster. Immediately after the
-                  event, shock and denial are typical. Longer term reactions
-                  include unpredictable emotions, flashbacks, strained
-                  relationships and even physical symptoms like headaches or
-                  nausea.{" "}
-                </p>
-              </article>
-            </section>
+           <ThreeWhats whatItIs={whatItIs} whatToExpect={whatToExpect} forMe={forMe} special />
             <div className="phil-image"></div>
             <section className="philosophy col-12 px-1">
               <h2>The BetterMind approach</h2>
               <p>
-                Traditional talk therapy won’t work for many with PTSD because
-                they don’t have access to the prefrontal cortex where that kind
-                of therapy is effective.
+                CBT is about more than identifying thought patterns; it is focused on using a wide range of strategies to help people overcome these thoughts. Techniques may include journaling, role-playing, relaxation techniques, and mental distractions.
               </p>
               <p>
-                Trauma is usually stuck in the lower parts of our brain, and we
-                must first calm down that part of the brain if we’re ever to
-                reach that top part where we can think clearly and rationally
-                about the events and make the changes we so desperately want.
+                It is important to learn how thoughts, feelings, and situations can contribute to maladaptive behaviors. The process can be difficult, especially for people who struggle with introspection, but it can ultimately lead to self-discovery and insights that are an essential part of the treatment process.
               </p>
               <p>
-                So, when treating trauma, we take a bottom-up (rather than a
-                top-down) approach. Eye Movement Desensitization and
-                Reprocessing (EMDR), Somatic Experiencing, and mindfulness are
-                examples of these bottom-up approaches.
+                It is important to start practicing new skills that can then be put in to use in real-world situations. For example, a person with a substance use disorder might start practicing new coping skills and rehearsing ways to avoid or deal with social situations that could potentially trigger a relapse.
               </p>
             </section>
 
+            <h2 className="underline mx-auto col-12">
+              Our Services
+            </h2>
+            <ThreeServices />
             <h2 className="underline mx-auto col-12">
               Frequently asked questions
             </h2>

@@ -1,7 +1,7 @@
 import React from "react";
 import { FaClipboardCheck, FaQuestion, FaSearch } from "react-icons/fa";
 
-function ThreeWhats({ whatToExpect, whatItIs, forMe }) {
+function ThreeWhats({ whatToExpect, whatItIs, forMe, special }) {
   return (
     <section className="services px-1 col-12">
       <article className="card flex">
@@ -11,13 +11,13 @@ function ThreeWhats({ whatToExpect, whatItIs, forMe }) {
           color={"var(--light-blue)"}
         />
         <h3 className="mx-auto">What it is</h3>
-        <p>{forMe} </p>
+        <p>{whatItIs} </p>
       </article>
 
       <article className="card flex">
         <FaQuestion size={70} className="mx-auto" color={"var(--light-blue)"} />
-        <h3 className="mx-auto">Is it for us?</h3>
-        <p>{whatItIs} </p>
+        <h3 className="mx-auto">{special ? `Am I affected?` : `Is it for me?`}</h3>
+        <p>{forMe} </p>
       </article>
 
       <article className="card flex">
@@ -33,6 +33,7 @@ ThreeWhats.defaultProps = {
   whatToExpect: "",
   whatItIs: "",
   forMe: "",
+  special: false,
 };
 
 export default ThreeWhats;

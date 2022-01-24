@@ -93,6 +93,7 @@ function Trauma() {
               whatItIs={whatItIs}
               whatToExpect={whatToExpect}
               forMe={forMe}
+              special
             />
 
             <div className="phil-image"></div>
