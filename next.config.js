@@ -5,6 +5,6 @@ module.exports = {
     defaultLocale: "en",
   },
   env: {
-    MAPS_API: "AIzaSyB2qQD6SHJ6lIHWQMb2cIQiZL4bRLG6hrE",
+    MAPS_API: "",
   },
 };
