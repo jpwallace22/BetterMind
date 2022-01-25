@@ -2,7 +2,7 @@ import { FaCaretRight, FaCaretDown } from "react-icons/fa";
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 
-function DropdownItem({ title, children, menuOpen }) {
+function DropdownItem({ title, children, menuOpen, services, special, about }) {
   const [isActive, setIsActive] = useState(false);
   const router = useRouter();
 
@@ -33,7 +33,11 @@ function DropdownItem({ title, children, menuOpen }) {
   return (
     <li
       className={`dropdown 
-      ${router.pathname.split("/")[1] === "services" ? "active" : null}`}
+      ${
+        services & (router.pathname.split("/")[1] === "services") && "active"
+      } ${
+        special & (router.pathname.split("/")[1] === "specialties") && "active"
+      } ${about & (router.pathname.split("/")[1] === "about") && "active"}`}
       onClick={({ target }) => handleClick(target)}
     >
       {title}{" "}
@@ -47,5 +51,11 @@ function DropdownItem({ title, children, menuOpen }) {
     </li>
   );
 }
+
+DropdownItem.defaultProps = {
+  services: false,
+  special: false,
+  about: false,
+};
 
 export default DropdownItem;

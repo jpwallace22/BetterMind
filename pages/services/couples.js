@@ -99,9 +99,7 @@ function Couples() {
               </p>
             </section>
 
-            <h2 className="underline mx-auto col-12">
-              Frequently asked questions
-            </h2>
+            <h2 className="underline mx-auto col-12">FAQ&apos;s</h2>
             <div className="col-12">
               <Faq faqList={coupleFaq} />
             </div>

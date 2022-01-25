@@ -98,15 +98,10 @@ function Stress() {
                 beneficial ways to deal with stress. In CBT, people are taught
                 to recognize and change negative thought patterns and apply
                 different tools to help them improve their negative-self talk to
-                be more positive. For relieving stress, this means people can
-                learn to be less hard on themselves and to recognize that it’s
-                ok to reduce some of their burdens without seeing themselves as
-                a failure.{" "}
+                be more positive.{" "}
               </p>
               <p>
-                Alternative Therapies – In addition to traditional methods of
-                stress therapy, there are many activities that an individual can
-                do to alleviate their stress. Activities like exercise, yoga,
+                Alternative Therapies – Activities like exercise, yoga,
                 acupuncture, massage, meditation, and social support are all
                 useful tools to try if a person is faced with intense feelings
                 of stress or pressure.{" "}
@@ -115,9 +110,7 @@ function Stress() {
 
             <h2 className="underline mx-auto col-12">Our Services</h2>
             <ThreeServices />
-            <h2 className="underline mx-auto col-12">
-              Frequently asked questions
-            </h2>
+            <h2 className="underline mx-auto col-12">FAQ&apos;s</h2>
             <div className="col-12">
               <Faq faqList={individualFaq} />
             </div>

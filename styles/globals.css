@@ -436,6 +436,13 @@ main.interior {
   background-image: url("../public/images/anxiety-hero.webp");
   background-position: -290px 0;
 }
+.stress .hero-image {
+  background-image: url("../public/images/stress-hero.webp");
+  background-position: -300px;
+}
+.philosophy .hero-image {
+  background-image: url("../public/images/philosophy-hero.webp");
+}
 .couples .phil-image {
   background-image: url("../public/images/couple-in-session-hex.webp");
   background-position: center;
@@ -446,6 +453,14 @@ main.interior {
 }
 .trauma .phil-image {
   background-image: url("../public/images/trauma-phil.webp");
+  background-position: center;
+}
+.anxiety .phil-image {
+  background-image: url("../public/images/anxiety-phil.webp");
+  background-position: center;
+}
+.stress .phil-image {
+  background-image: url("../public/images/stress-phil.webp");
   background-position: center;
 }
 .interior section.philosophy + h2 {
@@ -491,6 +506,33 @@ main.interior {
 .faq-q.active {
   box-shadow: var(--shadow);
 }
+.philosophy h4 {
+  font-size: 1.75rem;
+  margin: 2rem 0 1rem;
+}
+ul.principles {
+  list-style-type: square;
+  list-style-position: inside;
+  text-indent: -28px; /* key property */
+  margin-left: 28px; /* key property */
+  margin-bottom: 2rem;
+}
+ul.principles li {
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+ul.principles li::marker {
+  color: var(--light-blue);
+}
+.philosophy p {
+  font-size: 1.125rem;
+}
+section.principles {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
 /**********************
        @700px
 /**********************/
@@ -560,18 +602,6 @@ main.interior {
   }
   section.services:last-of-type article {
     width: 32%;
-  }
-  .phil-image {
-    grid-column: 7 / span 6;
-    background-position: left;
-  }
-  section.philosophy {
-    grid-column: span 6;
-    grid-row: 3;
-    place-self: center;
-  }
-  section.philosophy h2 {
-    text-align: left;
   }
   section.testimonials {
     display: flex;
@@ -647,8 +677,18 @@ main.interior {
   .anxiety .hero-image {
     background-position: center;
   }
+  .stress .hero-image {
+    background-position: center;
+  }
   .faq .item-wrapper {
     border-bottom: 1px solid var(--green);
+  }
+  .philosophy .hex1 {
+    top: 800px;
+  }
+  .philosophy .hex2 {
+    top: 1300px;
+    right: 80%;
   }
 }
 /**********************
@@ -694,6 +734,9 @@ main.interior {
     line-height: 4;
     background-color: var(--white);
     transition: none;
+  }
+  header nav > ul > li.active {
+    border-bottom: 5px solid var(--light-blue);
   }
   header nav > ul > li > a {
     text-align: center;
@@ -762,6 +805,18 @@ main.interior {
     top: 1480px;
     left: -30px;
   }
+  .phil-image {
+    grid-column: 7 / span 6;
+    background-position: left;
+  }
+  section.philosophy {
+    grid-column: span 6;
+    grid-row: 3;
+    place-self: center;
+  }
+  section.philosophy h2 {
+    text-align: left;
+  }
   nav.footer-links {
     grid-column: 5 / span 8;
     padding-left: 0;
@@ -786,6 +841,11 @@ main.interior {
   }
   .interior section.services article {
     width: 32%;
+  }
+  .philosophy .content {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1000px;
   }
 }
 /**********************
@@ -821,9 +881,9 @@ main.interior {
       @1400
 /**********************/
 @media screen and (min-width: 1400px) {
-  /* .homepage .hero-image {
+  .anxiety .phil-image {
     background-size: contain;
-  } */
+  }
 }
 /**********************
        KEYFRAMES

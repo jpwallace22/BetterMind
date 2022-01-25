@@ -58,7 +58,7 @@ function Header() {
         </div>
         <nav>
           <ul className={isActive ? "active" : undefined}>
-            <DropdownItem title="Services" menuOpen={isActive}>
+            <DropdownItem title="Services" menuOpen={isActive} services>
               <ul>
                 <li>
                   <Link href="/services/online">
@@ -77,7 +77,7 @@ function Header() {
                 </li>
               </ul>
             </DropdownItem>
-            <DropdownItem title="Specialties" menuOpen={isActive}>
+            <DropdownItem title="Specialties" menuOpen={isActive} special>
               <ul>
                 <li>
                   <Link href="/specialties/trauma">
@@ -96,7 +96,7 @@ function Header() {
                 </li>
               </ul>
             </DropdownItem>
-            <DropdownItem title="About Us" menuOpen={isActive}>
+            <DropdownItem title="About Us" menuOpen={isActive} about>
               <ul>
                 <li>
                   <Link href="/about/philosophy">
@@ -110,17 +110,13 @@ function Header() {
                 </li>
               </ul>
             </DropdownItem>
-            <li>
+            <li
+              className={
+                router.pathname.split("/")[1] === "contact" ? "active" : null
+              }
+            >
               <Link href="/contact">
-                <a
-                  className={
-                    router.pathname.split("/")[1] === "contact"
-                      ? "active"
-                      : null
-                  }
-                >
-                  Contact
-                </a>
+                <a>Contact</a>
               </Link>
             </li>
             <li>
