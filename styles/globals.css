@@ -575,6 +575,7 @@ button:disabled:hover {
 }
 .contact form button {
   width: 60%;
+  align-self: center;
 }
 form h3 {
   text-transform: none;
@@ -582,8 +583,17 @@ form h3 {
   line-height: 1;
   text-align: center;
 }
+form .captcha {
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+}
+form .buttons {
+  display: flex;
+  flex-direction: column;
+}
 /**********************
-       @700px
+       @750px
 /**********************/
 @media screen and (min-width: 750px) {
   nav.footer-links {

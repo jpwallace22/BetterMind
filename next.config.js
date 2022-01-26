@@ -6,5 +6,8 @@ module.exports = {
   },
   env: {
     MAPS_API: process.env.MAPS_API,
+    NEXT_PUBLIC_CAPTCHA_KEY: process.env.NEXT_PUBLIC_CAPTCHA_KEY,
+    CAPTCHA_SECRET_KEY: process.env.CAPTCHA_KEY,
+    GMAIL_PASSWORD: process.env.GMAIL_PASSWORD,
   },
 };
