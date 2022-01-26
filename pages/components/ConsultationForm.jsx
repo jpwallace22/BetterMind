@@ -29,6 +29,8 @@ function ConsultationForm() {
     }
   };
 
+  //TODO NEED TO ADD THE LOADING SCREEN AND SUCCESS SCREEN FOR THE EMAIL SENT and form validation
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("sending");
@@ -45,7 +47,7 @@ function ConsultationForm() {
     };
 
     //post the data to
-    const res = await fetch("/api/contact", {
+    const res = await fetch("/api/contact-route", {
       method: "POST",
       headers: {
         // Accept: "application/json, text/plain, */*",
@@ -71,7 +73,11 @@ function ConsultationForm() {
   };
 
   return (
-    <form className="card" onSubmit={(e) => handleSubmit(e)}>
+    <form
+      id="consultation-form"
+      className="card"
+      onSubmit={(e) => handleSubmit(e)}
+    >
       <h3>Consultation Form</h3>
       <p>
         Simply fill out the form and we will have a specialist contact you to

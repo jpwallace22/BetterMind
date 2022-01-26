@@ -1,4 +1,5 @@
 export default async function sendEmail(req, res) {
+  //check token with google to see if human
   const human = await humanCheck(req.body.token);
 
   if (!human) {
