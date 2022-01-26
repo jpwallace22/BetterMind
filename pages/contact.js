@@ -64,6 +64,7 @@ function Contact() {
         </div>
         <div className="col-12"></div>
       </main>
+
       <Map />
 
       <Footer />

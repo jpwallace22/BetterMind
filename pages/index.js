@@ -38,7 +38,7 @@ export default function Home() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
-          <Button to="/contact" className="mx-auto hero-cta">
+          <Button to="/contact/#consultation-form" className="mx-auto hero-cta">
             Free Consultation
           </Button>
         </div>
