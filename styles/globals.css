@@ -656,11 +656,14 @@ form .buttons {
   color: var(--white);
   font-size: 0.8rem;
 }
-.hex-grid__item:hover {
+.hex-grid__item {
+  cursor: pointer;
+}
+.hex-grid__item.show-info {
   transform: scale(1.2);
   z-index: 1;
 }
-.hex-grid__item:hover .about {
+.hex-grid__item.show-info .about {
   bottom: 0;
 }
 
@@ -984,6 +987,16 @@ form .buttons {
     width: 80%;
     margin: 0 auto;
     max-width: 1000px;
+  }
+  .hex-grid__item:hover {
+    transform: scale(1.2);
+    z-index: 1;
+  }
+  .hex-grid__item:hover .about {
+    bottom: 0;
+  }
+  .hex-grid__item {
+    cursor: default;
   }
 }
 /**********************
