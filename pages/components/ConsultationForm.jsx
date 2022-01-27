@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 import { HiThumbUp } from "react-icons/hi";
-import { validatePhone, validateEmail } from "./helperFunctions";
+import { validatePhone, validateEmail } from "../../public/helperFunctions";
 
 function ConsultationForm() {
   const [fname, setFname] = useState("");
