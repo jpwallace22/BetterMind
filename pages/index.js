@@ -32,11 +32,10 @@ export default function Home() {
       <main className="homepage grid">
         <div className="hero-content px-1">
           <h2 className="hero">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit
+            This is the first step towards having a <span className="gradient-text">BetterMind</span>
           </h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Step one was getting here. Step two is finding out what kind of help you need. Luckily, we can help you with that one!
           </p>
           <Button to="/contact/#consultation-form" className="mx-auto hero-cta">
             Free Consultation
@@ -76,9 +75,7 @@ export default function Home() {
                 name="Anita Brown"
                 handleClick={handleClick}
               >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-                ipsum sus
+                My partner and I can't say enough about BetterMind. I don't think we would still be together if it wasn't for Mary and her knowledge.
               </Testimonial>
               <Testimonial
                 src="/images/testimonial-image-2.webp"
@@ -87,9 +84,7 @@ export default function Home() {
                 handleClick={handleClick}
                 className="center"
               >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-                ipsum sus
+                BetterMind may very well have saved my life. I'm not new to therapy, but I was new to therapy that worked. They helped me realize that there is nothing wrong with me. 
               </Testimonial>
               <Testimonial
                 src="/images/testimonial-image-3.webp"
@@ -97,9 +92,7 @@ export default function Home() {
                 name="Jen Sasse"
                 handleClick={handleClick}
               >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-                ipsum sus
+                Jeff is more than my therapist. He's practically family at this point! I do bi-weekly sessions with him and they are the highlights of my month every month.
               </Testimonial>
             </section>
 
