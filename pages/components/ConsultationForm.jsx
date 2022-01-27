@@ -1,23 +1,29 @@
 import React, { useState, useRef } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 import { HiThumbUp } from "react-icons/hi";
+import { validatePhone, validateEmail } from "./helperFunctions";
 
 function ConsultationForm() {
   const [fname, setFname] = useState("");
   const [lname, setLname] = useState("");
   const [email, setEmail] = useState("");
+  const [emailVal, setEmailVal] = useState(true);
   const [phone, setPhone] = useState("");
+  const [phoneVal, setPhoneVal] = useState(true);
   const [service, setService] = useState("select");
   const [loading, setLoading] = useState(false);
   const [captchaIsClicked, setCaptchaIsClicked] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
+  //for the recaptcha
   const reRef = useRef();
 
+  //un-disable submit button when captcha clicked
   const handleCaptcha = () => {
     setCaptchaIsClicked(true);
   };
 
+  //handle mouseover effect on submit button
   const handleMouseOver = (e) => {
     if (!e.target.disabled) {
       const rect = e.target.getBoundingClientRect();
@@ -31,10 +37,19 @@ function ConsultationForm() {
     }
   };
 
-  //TODO NEED TO ADD THE LOADING SCREEN AND SUCCESS SCREEN FOR THE EMAIL SENT and form validation
+  //TODO  form validation
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!validatePhone(phone)) {
+      setPhoneVal(false);
+      return;
+    }
+    if (!validateEmail(email)) {
+      setEmailVal(false);
+      return;
+    }
+
     setLoading(true);
     const token = reRef.current.getValue();
 
@@ -144,6 +159,7 @@ function ConsultationForm() {
               </label>
             </div>
             <div className="floating">
+              {!emailVal && "Please use a valid email, ie 'bob@gmail.com'"}
               <input
                 type="email"
                 name="email"
@@ -163,6 +179,7 @@ function ConsultationForm() {
               </label>
             </div>
             <div className="floating">
+              {!phoneVal && "Please use a valid 10-digit phone number"}
               <input
                 type="tel"
                 name="phone"
@@ -175,10 +192,10 @@ function ConsultationForm() {
               <label
                 htmlFor="phone"
                 className="floating-label"
-                data-content="Phone Number"
+                data-content="10-digit Phone Number"
               >
                 {" "}
-                <span className="hidden-visually">Phone Number</span>
+                <span className="hidden-visually">10-digit Phone Number</span>
               </label>
             </div>
             <div className="floating">
