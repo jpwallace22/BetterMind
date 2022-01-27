@@ -1,3 +1,5 @@
+@import "./hexgrid.css";
+
 html,
 body {
   background-color: var(--white);
@@ -456,6 +458,9 @@ main.interior {
 .contact .hero-image {
   background-image: url("../public/images/contact-hero.webp");
 }
+.team .hero-image {
+  background-image: url("../public/images/team-hero.webp");
+}
 .couples .phil-image {
   background-image: url("../public/images/couple-in-session-hex.webp");
   background-position: center;
@@ -622,6 +627,47 @@ form .buttons {
 .contact .content {
   max-width: 1400px;
 }
+.team img {
+  width: 200%;
+}
+.team .about {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 420px;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+  color: var(--green);
+}
+.team .about h3 {
+  line-height: 0;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.team .about h4 {
+  color: var(--light-blue);
+}
+.team .about p {
+  line-height: 1.2;
+  width: 70%;
+  margin: 0.5rem auto 0;
+  color: var(--white);
+  font-size: 0.8rem;
+}
+.hex-grid__item:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+.hex-grid__item:hover .about {
+  bottom: 0;
+}
+
 /**********************
        @750px
 /**********************/
@@ -856,7 +902,7 @@ form .buttons {
     text-transform: uppercase;
   }
   header nav > ul > li:hover {
-    background-color: #f2f2f2;
+    background-color: var(--hex-green);
   }
   .caret {
     display: none;
@@ -888,7 +934,7 @@ form .buttons {
     border-radius: 8px 8px 0 0;
   }
   .dropdown.show > ul > li:hover {
-    background-color: #f2f2f2;
+    background-color: var(--hex-green);
   }
   .homepage .hero-image {
     min-height: 550px;
