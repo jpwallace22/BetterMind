@@ -10,7 +10,7 @@ function TeamMember({ image, alt, name, title, description }) {
           <h4>{title}</h4>
           <p>{description}</p>
         </div>
-        <Image src={image} alt={alt} layout="fill" />
+        <img src={image} alt={alt} layout="fill" />
       </div>
     </li>
   );
