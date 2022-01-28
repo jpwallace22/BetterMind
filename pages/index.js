@@ -8,7 +8,6 @@ import ThreeServices from "./components/ThreeServices";
 import Button from "./components/Button";
 import { FaLaptopMedical, FaMale, FaUserFriends } from "react-icons/fa";
 import { useState } from "react";
-import HorizontalScroll from "./components/HorizontalScroll";
 
 export default function Home() {
   const handleClick = (clicked) => {
@@ -33,12 +32,10 @@ export default function Home() {
       <main className="homepage grid">
         <div className="hero-content px-1">
           <h2 className="hero">
-            This is the first step towards having a{" "}
-            <span className="gradient-text">BetterMind</span>
+            This is the first step towards having a <span className="gradient-text">BetterMind</span>
           </h2>
           <p>
-            Step one was getting here. Step two is finding out what kind of help
-            you need. Luckily, we can help you with that one!
+            Step one was getting here. Step two is finding out what kind of help you need. Luckily, we can help you with that one!
           </p>
           <Button to="/contact/#consultation-form" className="mx-auto hero-cta">
             Free Consultation
@@ -57,6 +54,9 @@ export default function Home() {
                 practice. Our therapy rooms are warm and cozy. You’ll feel like
                 you’re sitting in our living room.
               </p>
+
+              <li><a href="https://better-mind.vercel.app" target="_blank" title="Justin Wallace | BetterMind">Justin Wallace</a></li>
+
               <p>
                 We don’t have impersonal therapists who can’t distinguish you
                 and your situation from other clients. We excel in client care
@@ -71,16 +71,14 @@ export default function Home() {
             </section>
 
             <h2 className="underline mx-auto col-12">What people are saying</h2>
-            {/* <section className="testimonials col-12 px-1">
+            <section className="testimonials col-12 px-1">
               <Testimonial
                 src="/images/testimonial-image-1.webp"
                 alt="young asian woman"
                 name="Anita Brown"
                 handleClick={handleClick}
               >
-                My partner and I can’t say enough about BetterMind. I don’t
-                think we would still be together if it wasn’t for Mary and her
-                knowledge.
+                My partner and I can't say enough about BetterMind. I don't think we would still be together if it wasn't for Mary and her knowledge.
               </Testimonial>
               <Testimonial
                 src="/images/testimonial-image-2.webp"
@@ -89,9 +87,7 @@ export default function Home() {
                 handleClick={handleClick}
                 className="center"
               >
-                BetterMind may very well have saved my life. I’m not new to
-                therapy, but I was new to therapy that worked. They helped me
-                realize that there is nothing wrong with me.
+                BetterMind may very well have saved my life. I'm not new to therapy, but I was new to therapy that worked. They helped me realize that there is nothing wrong with me. 
               </Testimonial>
               <Testimonial
                 src="/images/testimonial-image-3.webp"
@@ -99,13 +95,8 @@ export default function Home() {
                 name="Jen Sasse"
                 handleClick={handleClick}
               >
-                Jeff is more than my therapist. He’s practically family at this
-                point! I do bi-weekly sessions with him and they are the
-                highlights of my month every month.
+                Jeff is more than my therapist. He's practically family at this point! I do bi-weekly sessions with him and they are the highlights of my month every month.
               </Testimonial>
-            </section> */}
-            <section className="col-12 px-1">
-              <HorizontalScroll />
             </section>
 
             <Button to="/contact" className="col-12 mx-auto">
@@ -118,6 +109,7 @@ export default function Home() {
         </div>
       </main>
       <Footer />
+    
     </>
   );
 }

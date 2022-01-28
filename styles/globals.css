@@ -228,6 +228,43 @@ header nav > ul > li a {
   position: absolute;
   z-index: 1;
 }
+.subscribe-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  top: 0;
+   display: none; 
+   background: linear-gradient(
+    180deg,
+    rgba(28, 127, 165, 0.7) 0%,
+    rgba(31, 31, 31, 0.7) 100%
+  );
+}
+.subscribe {
+  z-index: 10;
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  min-height: 50vh;
+}
+.subscribe h2 {
+  width: 100%;
+  text-align: center;
+  line-height: 1.2;
+  margin: 0
+}
+.subscribe form {
+  display: flex;
+ flex-direction: column;
+ gap: 1rem;
+  margin: 0 auto;
+  width: 93%;
+  justify-content: center;
+  min-height: 48vh;
+}
 /**********************
         FOOTER
 /**********************/
@@ -800,9 +837,6 @@ form .buttons {
   .testimonial-card div {
     font-size: 1.3rem;
   }
-  .testimonial-card:not(.center) {
-    cursor: pointer;
-  }
   .testimonial-card.center {
     position: absolute;
     z-index: 3;
@@ -887,6 +921,7 @@ form .buttons {
       rgba(249, 249, 249, 0) 0%,
       rgb(249, 249, 249) 100%
     );
+    cursor: pointer;
   }
   button.prev {
     background: linear-gradient(
@@ -894,6 +929,7 @@ form .buttons {
       rgba(249, 249, 249, 0) 0%,
       rgb(249, 249, 249) 100%
     );
+    cursor: pointer;
   }
   .horizontal-scroll ul li {
     width: 480px;
