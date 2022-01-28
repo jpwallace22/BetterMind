@@ -106,7 +106,7 @@ h4 {
   background: linear-gradient(
     -90deg,
     rgba(28, 127, 165, 1) 0%,
-    rgba(31, 31, 31, 1) 70%
+    rgba(31, 31, 31, 1) 90%
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -665,6 +665,13 @@ form .buttons {
 }
 .hex-grid__item.show-info .about {
   bottom: 0;
+}
+.team .sponsors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem auto 0;
 }
 
 /**********************
