@@ -50,7 +50,7 @@ function Team() {
         <h2 className="underline col-12 mx-auto">Our Partners</h2>
         <div className="sponsors col-12">
           <a
-            href="https://plattonline.com/webcampaign/bitesized"
+            href="https://plattonline.com/webcampaign/"
             target="_blank"
             rel="noreferrer"
           >

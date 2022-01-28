@@ -47,8 +47,6 @@ function Header() {
   });
 
   return (
-    <>
-     
     <header ref={ref}>
       <div className={`container ${isActive && "active"}`}>
         <div className={`logo ${isActive && "active"}`}>
@@ -142,19 +140,7 @@ function Header() {
         </nav>
       </div>
       {isActive && <div className="overlay"></div>}
-        <div className='subscribe-wrapper'>
-      <div className="subscribe card">
-          <form>
-          
-            <label htmlFor="subscribe"><h2>Enter your email address</h2></label>
-            <input type="email" name="subscribe" id="subscribe"/>
-            <button className="btn-primary">Subscribe</button>
-          </form>
-      </div>
-    </div>
     </header>
-   
-    </>
   );
 }
 
