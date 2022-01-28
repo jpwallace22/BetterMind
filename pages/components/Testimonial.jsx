@@ -1,14 +1,11 @@
 import Image from "next/image";
 import Quotes from "../../public/images/quotes.svg";
 
-function Testimonial({ src, alt, children, name, className, handleClick }) {
+function Testimonial({ src, alt, name, input }) {
   return (
-    <div
-      className={`testimonial-card card ${className}`}
-      onClick={({ target }) => handleClick(target)}
-    >
+    <div className={`testimonial-card card `}>
       <Image width={90} height={90} alt={alt} src={src} />
-      <p>{children}</p>
+      <p>{input}</p>
       <div>{name}</div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 97.19 68.48">
         <defs></defs>

@@ -104,9 +104,9 @@ h4 {
 }
 .gradient-text {
   background: linear-gradient(
-    -90deg,
-    rgba(28, 127, 165, 1) 0%,
-    rgba(31, 31, 31, 1) 90%
+    180deg,
+    rgba(28, 127, 165, 1) 20%,
+    rgba(31, 31, 31, 1) 100%
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -374,6 +374,48 @@ section.philosophy {
   position: absolute;
   top: 20px;
   left: calc(50% - 180px);
+}
+.horizontal-scroll {
+  position: relative;
+}
+.horizontal-scroll ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  max-width: 100%;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+.horizontal-scroll ul::-webkit-scrollbar {
+  background: transparent; /* make scrollbar transparent */
+  -webkit-appearance: none;
+  width: 0;
+  height: 0;
+}
+.horizontal-scroll ul li {
+  width: 300px;
+}
+.horizontal-scroll ul li .testimonial-card {
+  width: 300px;
+  min-height: 445px;
+}
+.horizontal-scroll button svg {
+  opacity: 0.3;
+}
+button.prev,
+button.next {
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  height: 100%;
+  border: none;
+  background: transparent;
+}
+button.next {
+  right: 0;
+  left: initial;
 }
 /**********************
        404
@@ -753,7 +795,7 @@ form .buttons {
   }
   .testimonial-card {
     width: 33%;
-    font-size: 0.75rem;
+    transition: all 1s ease;
   }
   .testimonial-card div {
     font-size: 1.3rem;
@@ -769,6 +811,7 @@ form .buttons {
     font-size: 1rem;
     top: -20px;
     animation: grow 1s;
+    transition: all 1s ease;
   }
   .testimonial-card.center div {
     font-size: 2rem;
@@ -837,6 +880,27 @@ form .buttons {
   form .buttons {
     flex-direction: row;
     gap: 1rem;
+  }
+  button.next {
+    background: linear-gradient(
+      90deg,
+      rgba(249, 249, 249, 0) 0%,
+      rgb(249, 249, 249) 100%
+    );
+  }
+  button.prev {
+    background: linear-gradient(
+      -90deg,
+      rgba(249, 249, 249, 0) 0%,
+      rgb(249, 249, 249) 100%
+    );
+  }
+  .horizontal-scroll ul li {
+    width: 480px;
+  }
+  .horizontal-scroll ul li .testimonial-card {
+    width: 480px;
+    min-height: 325px;
   }
 }
 /**********************

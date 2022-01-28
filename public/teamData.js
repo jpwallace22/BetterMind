@@ -64,3 +64,30 @@ export const teamMembers = [
       "I'm an official therapy dog. I specialize in snuggles and eating treato's. I also accept walkies in lieu of payment for my services. ",
   },
 ];
+
+export const testimonialList = [
+  {
+    src: "/images/testimonial-image-1.webp",
+    alt: "young asian woman",
+    name: "Anita Brown",
+    input: `My partner and I can’t say enough about BetterMind. I don’t
+    think we would still be together if it wasn’t for Mary and her
+    knowledge.`,
+  },
+  {
+    src: "/images/testimonial-image-2.webp",
+    alt: "Cool black man with flower in hair",
+    name: "Aaron Webber",
+    input: ` BetterMind may very well have saved my life. I’m not new to
+    therapy, but I was new to therapy that worked. They helped me
+    realize that there is nothing wrong with me.`,
+  },
+  {
+    src: "/images/testimonial-image-3.webp",
+    alt: "huge smile on a brunette",
+    name: "Jen Sasse",
+    input: `Jeff is more than my therapist. He’s practically family at this
+    point! I do bi-weekly sessions with him and they are the
+    highlights of my month every month.`,
+  },
+];

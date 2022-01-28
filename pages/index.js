@@ -8,6 +8,7 @@ import ThreeServices from "./components/ThreeServices";
 import Button from "./components/Button";
 import { FaLaptopMedical, FaMale, FaUserFriends } from "react-icons/fa";
 import { useState } from "react";
+import HorizontalScroll from "./components/HorizontalScroll";
 
 export default function Home() {
   const handleClick = (clicked) => {
@@ -70,7 +71,7 @@ export default function Home() {
             </section>
 
             <h2 className="underline mx-auto col-12">What people are saying</h2>
-            <section className="testimonials col-12 px-1">
+            {/* <section className="testimonials col-12 px-1">
               <Testimonial
                 src="/images/testimonial-image-1.webp"
                 alt="young asian woman"
@@ -102,6 +103,9 @@ export default function Home() {
                 point! I do bi-weekly sessions with him and they are the
                 highlights of my month every month.
               </Testimonial>
+            </section> */}
+            <section className="col-12 px-1">
+              <HorizontalScroll />
             </section>
 
             <Button to="/contact" className="col-12 mx-auto">
