@@ -2,6 +2,7 @@ import Head from "next/head";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Button from "./components/Button";
+import Image from "next/image";
 
 function Custom404() {
   return (
@@ -16,8 +17,16 @@ function Custom404() {
       <div className="error">
         <Header />
         <main className="px-1">
+          <Image
+            width={200}
+            height={200}
+            src="/images/logo-brain.webp"
+            alt="The brain logo of BetterMind.com"
+            priority
+            className="brain"
+          />
           <h2>404</h2>
-          <h4>Uh oh, looks like we may have misplaced this page...</h4>
+          <h4>Seems as though we forgot where we put this page...</h4>
           <Button to="/">Back Home</Button>
         </main>
         <Footer />

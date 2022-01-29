@@ -67,6 +67,16 @@ function Footer() {
                   <a>Contact</a>
                 </Link>
               </li>
+              <li>
+                <Link href="/404">
+                  <a>404</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/email.html">
+                  <a>Email</a>
+                </Link>
+              </li>
             </ul>
           </nav>
 

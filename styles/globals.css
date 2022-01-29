@@ -523,10 +523,10 @@ button.next {
 }
 .error main {
   text-align: center;
-  padding: 9rem 0;
+  padding: 4rem 0 9rem;
 }
 .error h2 {
-  font-size: 8rem;
+  font-size: 6rem;
   background: linear-gradient(
     0deg,
     rgba(28, 127, 165, 1) 0%,
@@ -540,6 +540,11 @@ button.next {
 .error h4 {
   margin-bottom: 2rem;
   font-size: 1.125rem;
+}
+.error main span {
+  position: relative;
+  left: -110px;
+  bottom: -50px;
 }
 /**********************
        INTERIOR

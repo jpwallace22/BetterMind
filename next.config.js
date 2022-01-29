@@ -11,4 +11,10 @@ module.exports = {
     GMAIL_PASSWORD: process.env.GMAIL_PASSWORD,
     MAILCHIMP_API: process.env.MAILCHIMP_API,
   },
+  rewrites: async () => [
+    {
+      source: "/public/email.html",
+      destination: "/pages/api/email.js",
+    },
+  ],
 };
