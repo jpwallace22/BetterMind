@@ -9,21 +9,35 @@ import ThreeWhats from "../components/ThreeWhats";
 
 function Trauma() {
   const title = "Trauma & PTSD";
-  const whatToExpect = `Trauma therapy may include learning new self-care skills,
-  including setting boundaries with loved ones, taking quiet
-  time for yourself, and learning new coping skills. Trauma
-  therapy will teach you new ways to calm and soothe yourself
-  when this happens.`;
-  const whatItIs = ` Trauma is an emotional response to a terrible event like an
-  accident, rape or natural disaster. Immediately after the
-  event, shock and denial are typical. Longer term reactions
-  include unpredictable emotions, flashbacks, strained
-  relationships and even physical symptoms like headaches or
-  nausea.`;
-  const forMe = `Trauma experienced when young affects the mental well-being of
-  individuals throughout life. If you are wondering, “Is this
-  kind of therapy right for me?” and you have experienced trauma
-  in your life, the answer is a resounding yes.`;
+  const whatToExpect = (
+    <p>
+      Trauma therapy may include learning new self-care skills, including
+      setting boundaries with loved ones, taking quiet time for yourself, and
+      learning new coping skills.{" "}
+      <strong>
+        Trauma therapy will teach you new ways to calm and soothe yourself when
+        this happens.
+      </strong>
+    </p>
+  );
+  const whatItIs = (
+    <p>
+      {" "}
+      Trauma is an emotional response to a terrible event like an accident, rape
+      or natural disaster.{" "}
+      <em>Immediately after the event, shock and denial are typical.</em> Longer
+      term reactions include unpredictable emotions, flashbacks, strained
+      relationships and even physical symptoms like headaches or nausea.
+    </p>
+  );
+  const forMe = (
+    <p>
+      Trauma experienced when young affects the mental well-being of individuals
+      throughout life. If you are wondering, “
+      <em>Is this kind of therapy right for me?</em>” and you have experienced
+      trauma in your life, the answer is a resounding yes.
+    </p>
+  );
 
   const individualFaq = [
     {
@@ -70,20 +84,20 @@ function Trauma() {
         <div className="hero-content px-1">
           <h2 className="hero">{title}</h2>
           <p>
-            Trauma wears many faces. It can be abandonment by a parental figure
-            from a young age that left you feeling like you’re a burden or
-            unlovable, sexual abuse/assault, physical or verbal abuse from a
-            loved one, combat overseas, or even not being in combat and laying
-            witness to the horrors of war.{" "}
+            <strong>Trauma wears many faces.</strong> It can be abandonment by a
+            parental figure from a young age that left you feeling like you’re a
+            burden or unlovable, sexual abuse/assault, physical or verbal abuse
+            from a loved one, combat overseas, or even not being in combat and
+            laying witness to the horrors of war.{" "}
           </p>
           <p>
             Trying to cope with the pain of these experiences isn’t easy.
             Perhaps you go on dates but feel nervous or scared that you might
-            find yourself in a dangerous situation. Or maybe you’re irritable or
-            angry at work, and the guilt you’re experiencing is projecting anger
-            onto people you love and care about in your life. Feeling trapped
-            because you don’t do what you need to do to feel better (even if you
-            know what those things are!).
+            <strong> find yourself in a dangerous situation</strong>. Or maybe
+            you’re irritable or angry at work, and the guilt you’re experiencing
+            is projecting anger onto people you love and care about in your
+            life. Feeling trapped because you don’t do what you need to do to
+            feel better (even if you know what those things are!).
           </p>
         </div>
 
@@ -101,14 +115,15 @@ function Trauma() {
               <h2>The BetterMind approach</h2>
               <p>
                 Traditional talk therapy won’t work for many with PTSD because
-                they don’t have access to the prefrontal cortex where that kind
-                of therapy is effective.
+                they <em>don’t have access to the prefrontal cortex</em> where
+                that kind of therapy is effective.
               </p>
               <p>
                 Trauma is usually stuck in the lower parts of our brain, and we
                 must first calm down that part of the brain if we’re ever to
-                reach that top part where we can think clearly and rationally
-                about the events and make the changes we so desperately want.
+                reach that top part where we can{" "}
+                <strong>think clearly and rationally</strong> about the events
+                and make the changes we so desperately want.
               </p>
               <p>
                 So, when treating trauma, we take a bottom-up (rather than a

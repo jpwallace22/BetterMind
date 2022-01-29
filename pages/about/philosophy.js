@@ -26,10 +26,12 @@ function Philosophy() {
           <div className="content">
             <p>
               At the heart of quality care, a strong relationship develops
-              between patients, their families, and caregivers.
-              Relationship-based care makes a significant difference in health
-              care with the intent of easing uncertainty and creating a caring
-              and healing environment.
+              between patients, their families, and caregivers.{" "}
+              <strong>
+                Relationship-based care makes a significant difference in health
+                care with the intent of easing uncertainty and creating a caring
+                and healing environment.
+              </strong>
             </p>
             <p>
               Hospitals can sometimes leave patients with a sense of
@@ -39,10 +41,13 @@ function Philosophy() {
             </p>
             <p>
               It is a philosophy of caring that places the patient and family at
-              the center of all that we do. This philosophy is reflected in
-              BetterMind’s Mission, Vision and Values. BetterMind’s health care
-              team takes pride in providing the best possible care through
-              Relationship-Based Care.
+              the center of all that we do.{" "}
+              <strong>
+                This philosophy is reflected in BetterMind’s Mission, Vision and
+                Values.
+              </strong>{" "}
+              BetterMind’s health care team takes pride in providing the best
+              possible care through Relationship-Based Care.
             </p>
           </div>
           <section className="principles">

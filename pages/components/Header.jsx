@@ -3,11 +3,14 @@ import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/router";
 import { FaTimes, FaGripLines, FaMailBulk } from "react-icons/fa";
 import DropdownItem from "./DropdownItem";
+import { HiThumbUp } from "react-icons/hi";
 
 function Header() {
   const router = useRouter();
   const [isActive, setIsActive] = useState(false);
   const [subscribeOpen, setSubscribeOpen] = useState(false);
+  const [subscribed, setSubscribed] = useState(false);
+  const [email, setEmail] = useState("");
   let ref = useRef(null);
   let sub = useRef(null);
 
@@ -62,6 +65,12 @@ function Header() {
     window.addEventListener("resize", clearAll);
     return window.addEventListener("resize", clearAll);
   });
+
+  //
+  const subscribe = (e) => {
+    e.preventDefault();
+    setSubscribed(true);
+  };
 
   //add the click outside of component event listener
   useEffect(() => {
@@ -168,33 +177,48 @@ function Header() {
       {subscribeOpen && (
         <div className="subscribe-wrapper">
           <div className="subscribe card" ref={sub}>
-            <form>
-              <FaMailBulk size={90} color="var(--light-blue)" />
-              <label htmlFor="subscribe">
-                <h2>Enter your email address</h2>
-              </label>
-              <p>
-                And we’ll keep you up to date with the most pertinent mental
-                health information on the planet!
-              </p>
-              <input
-                type="email"
-                name="subscribe"
-                id="subscribe"
-                placeholder="Email Address"
-              />
-              <button
-                className="btn-primary"
-                onPointerMove={handleMouseOver}
-                onPointerLeave={({ target }) =>
-                  !target.disabled
-                    ? (target.style.background = "var(--dark-blue)")
-                    : null
-                }
-              >
-                Subscribe
-              </button>
-            </form>
+            {subscribed ? (
+              <div className="submitted">
+                <HiThumbUp size={120} color="var(--green)" />
+                <h3>Thank you!</h3>
+                <h4>You’ll be hearing from us</h4>
+                <p>
+                  Having a healthy mind is important. We are proud of you for
+                  taking the right steps.
+                </p>
+              </div>
+            ) : (
+              <form onSubmit={(e) => subscribe(e)}>
+                <FaMailBulk size={90} color="var(--light-blue)" />
+                <label htmlFor="subscribe">
+                  <h2>Enter your email address</h2>
+                </label>
+                <p>
+                  And we’ll keep you up to date with the most pertinent mental
+                  health information on the planet!
+                </p>
+                <input
+                  type="email"
+                  name="subscribe"
+                  id="subscribe"
+                  placeholder="Email Address"
+                  value={email}
+                  onChange={({ target }) => setEmail(target.value)}
+                />
+                <button
+                  className="btn-primary"
+                  onPointerMove={handleMouseOver}
+                  onPointerLeave={({ target }) =>
+                    !target.disabled
+                      ? (target.style.background = "var(--dark-blue)")
+                      : null
+                  }
+                >
+                  Subscribe
+                </button>
+              </form>
+            )}
+
             <div className="close" onClick={() => setSubscribeOpen(false)}>
               <FaTimes size={30} />
             </div>

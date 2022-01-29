@@ -11,10 +11,42 @@ function Anxiety() {
   //TODO need to change the phil image
 
   const title = "Anxiety & Depression";
-  const whatToExpect = `Cognitive behavioral therapy (CBT) is a type of psychotherapeutic treatment that helps people learn how to identify and change destructive or disturbing thought patterns that have a negative influence on behavior and emotions. CBT focuses on changing the automatic negative thoughts that can contribute to and worsen emotional difficulties, depression, and anxiety.`;
-  const whatItIs = `Anxiety disorders are real, serious medical conditions. Anxiety disorders are the most common and pervasive mental disorders in the United States. 
-Depression is a condition in which a person feels discouraged, sad, hopeless, unmotivated, or disinterested in life in general for more than two weeks and when the feelings interfere with daily activities`;
-  const forMe = `Having a low mood or feeling on edge are common experiences for us all. When these moods persist, it may be that you are experiencing depression or anxiety – or both. These self tests ask some important questions that can help you take stock of where you are at so you can make a plan for feeling better sooner.`;
+  const whatToExpect = (
+    <p>
+      Cognitive behavioral therapy (CBT) is a type of psychotherapeutic
+      treatment that helps people learn how to identify and change destructive
+      or disturbing thought patterns that have a negative influence on behavior
+      and emotions.{" "}
+      <em>
+        CBT focuses on changing the automatic negative thoughts that can
+        contribute to and worsen emotional difficulties, depression, and
+        anxiety.
+      </em>
+    </p>
+  );
+  const whatItIs = (
+    <p>
+      Anxiety disorders are real, serious medical conditions.{" "}
+      <strong>
+        Anxiety disorders are the most common and pervasive mental disorders in
+        the United States.
+      </strong>{" "}
+      Depression is a condition in which a person feels discouraged, sad,
+      hopeless, unmotivated, or disinterested in life in general for more than
+      two weeks and when the feelings interfere with daily activities
+    </p>
+  );
+  const forMe = (
+    <p>
+      Having a low mood or feeling on edge are common experiences for us all.
+      When these moods persist,{" "}
+      <strong>
+        it may be that you are experiencing depression or anxiety – or both.
+      </strong>{" "}
+      These self tests ask some important questions that can help you take stock
+      of where you are at so you can make a plan for feeling better sooner.
+    </p>
+  );
 
   const individualFaq = [
     {
@@ -61,14 +93,21 @@ Depression is a condition in which a person feels discouraged, sad, hopeless, un
         <div className="hero-content px-1">
           <h2 className="hero">{title}</h2>
           <p>
-            In general‚ about 1 out of every 6 adults will have depression at
-            some time in their life. Depression affects about 16 million
-            American adults every year. Anyone can get depressed, and depression
-            can happen at any age and in any type of person.{" "}
+            In general‚ about{" "}
+            <strong>
+              1 out of every 6 adults will have depression at some time in their
+              life
+            </strong>
+            . Depression affects about 16 million American adults every year.
+            Anyone can get depressed, and depression can happen at any age and
+            in any type of person.{" "}
           </p>
           <p>
             Many people who experience depression also have other mental health
-            conditions. Anxiety disorders often go hand in hand with depression.
+            conditions.{" "}
+            <strong>
+              Anxiety disorders often go hand in hand with depression.
+            </strong>
             People who have anxiety disorders struggle with intense and
             uncontrollable feelings of anxiety, fear, worry, and/or panic. These
             feelings can interfere with daily activities and may last for a long
@@ -90,8 +129,11 @@ Depression is a condition in which a person feels discouraged, sad, hopeless, un
               <p>
                 CBT is about more than identifying thought patterns; it is
                 focused on using a wide range of strategies to help people
-                overcome these thoughts. Techniques may include journaling,
-                role-playing, relaxation techniques, and mental distractions.
+                overcome these thoughts.{" "}
+                <em>
+                  Techniques may include journaling, role-playing, relaxation
+                  techniques, and mental distractions.
+                </em>
               </p>
               <p>
                 It is important to learn how thoughts, feelings, and situations
@@ -101,11 +143,14 @@ Depression is a condition in which a person feels discouraged, sad, hopeless, un
                 insights that are an essential part of the treatment process.
               </p>
               <p>
-                It is important to start practicing new skills that can then be
-                put in to use in real-world situations. For example, a person
-                with a substance use disorder might start practicing new coping
-                skills and rehearsing ways to avoid or deal with social
-                situations that could potentially trigger a relapse.
+                <strong>
+                  It is important to start practicing new skills that can then
+                  be put in to use in real-world situations.
+                </strong>{" "}
+                For example, a person with a substance use disorder might start
+                practicing new coping skills and rehearsing ways to avoid or
+                deal with social situations that could potentially trigger a
+                relapse.
               </p>
             </section>
 

@@ -37,8 +37,9 @@ export default function Home() {
             <span className="gradient-text">BetterMind</span>
           </h2>
           <p>
-            Step one was getting here. Step two is finding out what kind of help
-            you need. Luckily, we can help you with that one!
+            <strong>Congratulations on step one—</strong> that was getting here.
+            Now, step two is finding out exactly what kind of help you need.
+            Luckily, we kinda specialize in that.
           </p>
           <Button to="/contact/#consultation-form" className="mx-auto hero-cta">
             Free Consultation
@@ -54,8 +55,8 @@ export default function Home() {
               <h2>A little about our philosophy</h2>
               <p>
                 We don’t have stuffy offices as you might find in a medical
-                practice. Our therapy rooms are warm and cozy. You’ll feel like
-                you’re sitting in our living room.
+                practice. <strong>Our therapy rooms are warm and cozy.</strong>{" "}
+                You’ll feel like you’re sitting in our living room.
               </p>
               <p>
                 We don’t have impersonal therapists who can’t distinguish you
@@ -63,47 +64,17 @@ export default function Home() {
                 and will treat you as the unique person you are.
               </p>
               <p>
-                We’ll never judge you. You’ll feel relaxed and cared for by our
-                compassionate and genuine therapists. We respect all
-                relationship types, people with all religious beliefs and from
-                all cultures.
+                We’ll never judge you.{" "}
+                <em>
+                  You’ll feel relaxed and cared for by our compassionate and
+                  genuine therapists.
+                </em>{" "}
+                We respect all relationship types, people with all religious
+                beliefs and from all cultures.
               </p>
             </section>
 
             <h2 className="underline mx-auto col-12">What people are saying</h2>
-            {/* <section className="testimonials col-12 px-1">
-              <Testimonial
-                src="/images/testimonial-image-1.webp"
-                alt="young asian woman"
-                name="Anita Brown"
-                handleClick={handleClick}
-              >
-                My partner and I can’t say enough about BetterMind. I don’t
-                think we would still be together if it wasn’t for Mary and her
-                knowledge.
-              </Testimonial>
-              <Testimonial
-                src="/images/testimonial-image-2.webp"
-                alt="Cool black man with flower in hair"
-                name="Aaron Webber"
-                handleClick={handleClick}
-                className="center"
-              >
-                BetterMind may very well have saved my life. I’m not new to
-                therapy, but I was new to therapy that worked. They helped me
-                realize that there is nothing wrong with me.
-              </Testimonial>
-              <Testimonial
-                src="/images/testimonial-image-3.webp"
-                alt="huge smile on a brunette"
-                name="Jen Sasse"
-                handleClick={handleClick}
-              >
-                Jeff is more than my therapist. He’s practically family at this
-                point! I do bi-weekly sessions with him and they are the
-                highlights of my month every month.
-              </Testimonial>
-            </section> */}
             <section className="col-12 px-1">
               <HorizontalScroll />
             </section>

@@ -94,12 +94,18 @@ function Footer() {
               </li>
             </ul>
           </nav>
-          <div className="footer-logo"></div>
+          <Link href={"/"} passHref>
+            <div className="footer-logo"></div>
+          </Link>
 
           <p>
             <small>
               Designed and Developed by{" "}
-              <a href="http://thejustinwallace.com">
+              <a
+                href="http://thejustinwallace.com"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Justin Wallace Development
               </a>{" "}
               All Rights Reserved Copyright © 2022

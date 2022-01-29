@@ -8,22 +8,37 @@ import ThreeWhats from "../components/ThreeWhats";
 
 function Online() {
   const title = "Online Therapy";
-  const whatItIs = `Distance doesn’t have to be a barrier to getting the support
-  you deserve. We are physically located in San Diego, but have
-  clients that live all over the state. With online therapy, we
-  can do all the same things we would do in person, including
-  trauma processing, somatic work, and EMDR!`;
-  const forMe = `It eliminates commute times! There’s no more sitting in
-  traffic or factoring in commute time to go to an office. You
-  can meet during your lunch hour, in between meetings, when the
-  kids are napping, or any other hour-long window you have that
-  may have been otherwise lost to aimlessly scrolling on your
-  phone.`;
-  const whatToExpect = `Before each session, I’ll send a link that you can access on
-  your phone, computer, or tablet. The link is generated through
-  the secure and HIPPA-compliant platform called SimplePractice.
-  The first time you use it, it will ask you to connect to your
-  device’s microphone and camera, and then you’ll be good to go!`;
+  const whatItIs = (
+    <p>
+      Distance doesn’t have to be a barrier to getting the support you deserve.
+      We are physically located in San Diego,
+      <em> but have clients that live all over the state.</em> With online
+      therapy,{" "}
+      <strong>we can do all the same things we would do in person</strong>,
+      including trauma processing, somatic work, and EMDR!`;
+    </p>
+  );
+  const forMe = (
+    <p>
+      <strong>It eliminates commute times!</strong> There’s no more sitting in
+      traffic or factoring in commute time to go to an office. You can meet
+      during your lunch hour, in between meetings, when the kids are napping, or
+      any other hour-long window you have that may have been otherwise lost to
+      aimlessly scrolling on your phone.
+    </p>
+  );
+  const whatToExpect = (
+    <p>
+      Before each session, I’ll send a link that you can access on your phone,
+      computer, or tablet.{" "}
+      <em>
+        The link is generated through the secure and HIPPA-compliant platform
+      </em>{" "}
+      called SimplePractice. The first time you use it, it will ask you to
+      connect to your device’s microphone and camera, and then you’ll be good to
+      go!
+    </p>
+  );
 
   const individualFaq = [
     {
@@ -71,18 +86,25 @@ function Online() {
           <h2 className="hero">{title}</h2>
           <p>
             We’re living, working, and trying to relax all in the same space.
-            So, online therapy makes sense. But maybe you’ve wondered… “Is
-            teletherapy as effective as in-person therapy? Won’t it be awkward
-            and impersonal?” You’re not alone there. I used to have the same
-            questions. But research has shown that teletherapy is just as
-            effective as in-person services in most cases. And it has benefits
-            that traditional in-office therapy doesn’t have.{" "}
+            So, online therapy makes sense. But maybe you’ve wondered…{" "}
+            <em>
+              “Is teletherapy as effective as in-person therapy? Won’t it be
+              awkward and impersonal?”{" "}
+            </em>
+            You’re not alone there. I used to have the same questions. But
+            research has shown that{" "}
+            <strong>
+              teletherapy is just as effective as in-person services in most
+              cases.
+            </strong>{" "}
+            And it has benefits that traditional in-office therapy doesn’t have.{" "}
           </p>
           <p>
             Telehealth makes therapy available to more people. I love this
             because, like so many other services, you don’t have to pick a
             therapist that you may not totally jive with just because their
-            office is an easy commute away. It also eliminates commute times.
+            office is an easy commute away.{" "}
+            <strong>It also eliminates commute times.</strong>
             There’s no more sitting in traffic or factoring in commute time to
             go to an office.
           </p>
@@ -102,8 +124,11 @@ function Online() {
                 Not all forms of online therapy are the same and the treatment
                 approach you choose might depend on a variety of factors
                 including the nature of your condition and your therapeutic
-                goals. Some forms such as cognitive-behavioral therapy (CBT) are
-                more popular in online formats
+                goals.{" "}
+                <em>
+                  Some forms such as cognitive-behavioral therapy (CBT) are more
+                  popular in online formats.
+                </em>
               </p>
               <p>
                 We’ll identify tangible things you can do to start to improve
@@ -112,8 +137,9 @@ function Online() {
               </p>
               <p>
                 We know that things grow under pressure, like diamonds, plants,
-                and muscles. That’s true for psychological processes, too. By
-                that logic, psychological pressure is not only good, but
+                and muscles.
+                <strong> That’s true for psychological processes, too.</strong>{" "}
+                By that logic, psychological pressure is not only good, but
                 necessary for discovering more about who we are and who we can
                 be.
               </p>

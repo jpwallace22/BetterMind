@@ -36,6 +36,12 @@ h4 {
   font-weight: 500;
   line-height: 1.2;
 }
+strong {
+  font-weight: 500;
+}
+em {
+  font-style: italic;
+}
 /**********************
     UTILITIES
 /**********************/
@@ -311,6 +317,10 @@ header nav > ul > li:last-child {
   color: var(--green);
 }
 
+.subscribe-wrapper .submitted {
+  padding: 0;
+}
+
 /**********************
         FOOTER
 /**********************/
@@ -369,6 +379,7 @@ nav.footer-links ul li:first-child {
   background: url("../public/images/footer-logo.webp") no-repeat center/contain;
   min-height: 120px;
   margin-bottom: 1rem;
+  cursor: pointer;
 }
 footer p {
   grid-column: span 12;
@@ -881,7 +892,7 @@ form .buttons {
     transition: all 1s ease;
   }
   .testimonial-card div {
-    font-size: 1.3rem;
+    font-size: 2rem;
   }
   .testimonial-card.center {
     position: absolute;

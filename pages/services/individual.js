@@ -7,17 +7,38 @@ import ThreeWhats from "../components/ThreeWhats";
 
 function Individual() {
   const title = "Individual Therapy";
-  const whatItIs = `Individual therapy can help you learn how to: Move closer to your personal, career, and relational relationship goals. Cope effectively with stress and worry. Overcome depression and grief. Improve your social skills and your ability to connect to others.`;
-  const forMe = ` Individual therapy can help you learn how to: Move closer to
-  your personal, career, and relational relationship goals. Cope
-  effectively with stress and worry. Overcome depression and
-  grief. Improve your social skills and your ability to connect
-  to others.`;
-  const whatToExpect = `Our first session is to listen to your concerns, based on the
-  information you provide, recommendations will be made
-  regarding the focus and desired outcomes of counseling. The
-  strategies and approach used during counseling will be
-  determined by your specific goals and personality type.`;
+  const whatItIs = (
+    <p>
+      Individual therapy can help you learn how to:{" "}
+      <strong>
+        Move closer to your personal, career, and relational relationship goals.
+      </strong>{" "}
+      Cope effectively with stress and worry. Overcome depression and grief.
+      Improve your social skills and your ability to connect to others.
+    </p>
+  );
+  const forMe = (
+    <p>
+      {" "}
+      Individual therapy can help you learn how to: Move closer to your
+      personal, career, and relational relationship goals. Cope effectively with
+      stress and worry. <em>Overcome depression and grief.</em> Improve your
+      social skills and your ability to connect to others.
+    </p>
+  );
+  const whatToExpect = (
+    <p>
+      Our first session is to listen to your concerns, based on the information
+      you provide,
+      <strong>
+        {" "}
+        recommendations will be made regarding the focus and desired outcomes of
+        counseling.
+      </strong>{" "}
+      The strategies and approach used during counseling will be determined by
+      your specific goals and personality type.
+    </p>
+  );
 
   const individualFaq = [
     {
@@ -69,10 +90,13 @@ function Individual() {
             on your own.{" "}
           </p>
           <p>
-            But what if you could evolve into something even better than your
-            previous normal self and use the crappy stuff you’ve been dealing
-            with to grow into an even stronger and more amazing version of
-            yourself?
+            But{" "}
+            <strong>
+              what if you could evolve into something even better than your
+              previous normal self
+            </strong>{" "}
+            and use the crappy stuff you’ve been dealing with to grow into an
+            even stronger and more amazing version of yourself?
           </p>
         </div>
 
@@ -91,14 +115,18 @@ function Individual() {
                 non-shaming, non-pathologizing way.
               </p>
               <p>
-                We’ll identify tangible things you can do to start to improve
-                your life, as well as look at how past events may be
-                contributing to your unease.
+                <em>
+                  We’ll identify tangible things you can do to start to improve
+                  your life,
+                </em>{" "}
+                as well as look at how past events may be contributing to your
+                unease.
               </p>
               <p>
                 We know that things grow under pressure, like diamonds, plants,
-                and muscles. That’s true for psychological processes, too. By
-                that logic, psychological pressure is not only good, but
+                and muscles.{" "}
+                <strong>That’s true for psychological processes, too.</strong>{" "}
+                By that logic, psychological pressure is not only good, but
                 necessary for discovering more about who we are and who we can
                 be.
               </p>

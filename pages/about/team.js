@@ -25,12 +25,14 @@ function Team() {
         <div className="hero-content px-1">
           <h2 className="hero">{title}</h2>
           <p>
-            Our talented &amp; experienced team delivers amazing results. We
-            have a can-do attitude backed up by more than 24 years experience
+            <strong>
+              Our talented &amp; experienced team delivers amazing results.
+            </strong>{" "}
+            We have a can-do attitude backed up by more than 24 years experience
             delivering high-end, therapy and counseling services. Though we may
-            not look like your typical doctors office, we are all HIGHLY
-            qualified and skilled in our professions. We just know that its
-            important to let lose a little bit.
+            not look like your typical doctors office,{" "}
+            <em>we are all HIGHLY qualified and skilled in our professions.</em>{" "}
+            We just know that its important to let lose a little bit.
           </p>
         </div>
         <div className="col-12 px-1">

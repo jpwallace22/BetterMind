@@ -11,9 +11,36 @@ function Stress() {
   //TODO need to change the phil image
 
   const title = "Stress Management";
-  const whatToExpect = `Stress is caused by our thoughts about a situation, not by the situation itself. Two people in the exact same situation might have different levels of stress (or no stress at all), just because of how they think about it. The process of identifying and changing these irrational thoughts is called cognitive restructuring`;
-  const whatItIs = `Stress is a normal psychological and physical reaction to the demands of life. A small amount of stress can be good, motivating you to perform well. But multiple challenges daily, such as sitting in traffic, meeting deadlines and paying bills, can push you beyond your ability to cope.`;
-  const forMe = `Stress management gives you a range of tools to reset your alarm system. It can help your mind and body adapt (resilience). Without it, your body might always be on high alert. Over time, chronic stress can lead to serious health problems.`;
+  const whatToExpect = (
+    <p>
+      Stress is caused by our thoughts about a situation, not by the situation
+      itself.{" "}
+      <strong>
+        Two people in the exact same situation might have different levels of
+        stress
+      </strong>{" "}
+      (or no stress at all), just because of how they think about it. The
+      process of identifying and changing these irrational thoughts is called
+      cognitive restructuring
+    </p>
+  );
+  const whatItIs = (
+    <p>
+      Stress is a normal psychological and physical reaction to the demands of
+      life. <em>A small amount of stress can be good</em>, motivating you to
+      perform well. But multiple challenges daily, such as sitting in traffic,
+      meeting deadlines and paying bills, can push you beyond your ability to
+      cope.
+    </p>
+  );
+  const forMe = (
+    <p>
+      Stress management gives you a range of tools to reset your alarm system.
+      It can help your mind and body adapt (resilience). Without it, your body
+      might always be on high alert. Over time,{" "}
+      <strong>chronic stress can lead to serious health problems.</strong>
+    </p>
+  );
 
   const individualFaq = [
     {
@@ -67,10 +94,14 @@ function Stress() {
           </p>
           <p>
             Your brain comes hard-wired with an alarm system for your
-            protection. When your brain perceives a threat, it signals your body
-            to release a burst of hormones that increase your heart rate and
-            raise your blood pressure. This &quot;fight-or-flight&quot; response
-            fuels you to deal with the threat.{" "}
+            protection.{" "}
+            <em>
+              When your brain perceives a threat, it signals your body to
+              release a burst of hormones that increase your heart rate and
+              raise your blood pressure.
+            </em>{" "}
+            This &quot;fight-or-flight&quot; response fuels you to deal with the
+            threat.{" "}
           </p>
         </div>
 
@@ -86,25 +117,26 @@ function Stress() {
             <section className="philosophy col-12 px-1">
               <h2>The BetterMind approach</h2>
               <p>
-                Psychotherapy – This type of therapy takes place with a
-                psychologist, psychiatrist, or another type of mental health
-                professional. In psychotherapy, people are encouraged to
-                discover the underlying causes of their stress so that they can
-                learn strategies for improving their quality of life.{" "}
+                <strong>Psychotherapy</strong> – This type of therapy takes
+                place with a psychologist, psychiatrist, or another type of
+                mental health professional. In psychotherapy, people are
+                encouraged to discover the underlying causes of their stress so
+                that they can learn strategies for improving their quality of
+                life.{" "}
               </p>
               <p>
-                Behavior Therapy – There are several types of behavioral
-                therapy. Cognitive-behavioral therapy (CBT) is one of the most
-                beneficial ways to deal with stress. In CBT, people are taught
-                to recognize and change negative thought patterns and apply
-                different tools to help them improve their negative-self talk to
-                be more positive.{" "}
+                <strong>Behavior Therapy</strong> – There are several types of
+                behavioral therapy. Cognitive-behavioral therapy (CBT) is one of
+                the most beneficial ways to deal with stress. In CBT, people are
+                taught to recognize and change negative thought patterns and
+                apply different tools to help them improve their negative-self
+                talk to be more positive.{" "}
               </p>
               <p>
-                Alternative Therapies – Activities like exercise, yoga,
-                acupuncture, massage, meditation, and social support are all
-                useful tools to try if a person is faced with intense feelings
-                of stress or pressure.{" "}
+                <strong>Alternative Therapies</strong> – Activities like
+                exercise, yoga, acupuncture, massage, meditation, and social
+                support are all useful tools to try if a person is faced with
+                intense feelings of stress or pressure.{" "}
               </p>
             </section>
 

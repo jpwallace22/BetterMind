@@ -38,7 +38,11 @@ function HorizontalScroll() {
   return (
     <div className="horizontal-scroll">
       {scrollX !== 0 && (
-        <button className="prev" onClick={() => slide(-480)}>
+        <button
+          aria-label="Previous Content"
+          className="prev"
+          onClick={() => slide(-480)}
+        >
           <FaAngleLeft size={60} color="var(--dark-blue)" />
         </button>
       )}
@@ -55,7 +59,11 @@ function HorizontalScroll() {
         ))}
       </ul>
       {!scrollEnd && (
-        <button className="next" onClick={() => slide(+480)}>
+        <button
+          aria-label="Next Content"
+          className="next"
+          onClick={() => slide(+480)}
+        >
           <FaAngleRight size={60} color="var(--dark-blue)" />
         </button>
       )}

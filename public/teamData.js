@@ -90,4 +90,22 @@ export const testimonialList = [
     point! I do bi-weekly sessions with him and they are the
     highlights of my month every month.`,
   },
+  {
+    src: "/images/testimonial-image-4.webp",
+    alt: "The former president Barrack Obama",
+    name: "Barrack Obama",
+    input: `Without the BetterMind family by my side I dont think I could have ran the country. I used the online services because of my busy schedule.`,
+  },
+  {
+    src: "/images/testimonial-image-5.webp",
+    alt: "A Blond woman who looks like she has a secret",
+    name: "Lauren Wallace",
+    input: `I dont know about everyone else that uses BetterMind, but I can say that I feel like family. I love this place and cant wait to get therapy every month!`,
+  },
+  {
+    src: "/images/testimonial-image-6.webp",
+    alt: "the lord and savior Keanu",
+    name: "John Wick",
+    input: `After my dog died and I went on a giant killing spree, I had a lot to unpack. Thankfully the BetterMind team was there for me. Thanks team!!`,
+  },
 ];

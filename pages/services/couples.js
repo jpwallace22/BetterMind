@@ -7,16 +7,28 @@ import Header from "../components/Header";
 import ThreeWhats from "../components/ThreeWhats";
 
 function Couples() {
-  const whatToExpect = `Most couples come away from therapy with greater knowledge of
-  their relational patterns and with the necessary skills to
-  effectively communicate and problem-solve with their partners.`;
-  const whatItIs = `Couples therapy can resolve a current problem, prevent an
-  exacerbation of problems or simply provide a “check-up” for a
-  happy couple that is experiencing a period of transition or
-  increased stress.`;
-  const forMe = `Couples therapy is a type of psychotherapy in which a licensed
-  therapist with clinical experience working with couples helps
-  people involved in a romantic relationship.`;
+  const whatToExpect = (
+    <p>
+      Most couples come away from therapy with greater knowledge of their
+      relational patterns and with the
+      <strong> necessary skills to effectively communicate</strong> and
+      problem-solve with their partners.
+    </p>
+  );
+  const whatItIs = (
+    <p>
+      Couples therapy can resolve a current problem, prevent an exacerbation of
+      problems or<em> simply provide a “check-up” for a happy couple</em> that
+      is experiencing a period of transition or increased stress.
+    </p>
+  );
+  const forMe = (
+    <p>
+      Couples therapy is a type of psychotherapy in which a licensed therapist
+      with clinical experience working with couples helps people involved in a
+      romantic relationship.
+    </p>
+  );
   const coupleFaq = [
     {
       q: `What if your partner doesn't want to do therapy?`,
@@ -54,19 +66,22 @@ function Couples() {
         <div className="hero-content px-1">
           <h2 className="hero">Couples &amp; Marriage Counseling</h2>
           <p>
-            Wondering where all the romance went? Or feeling stuck in a
-            relationship where “taking breaks” and the “silent treatment” just
-            aren’t working? Maybe you’re feeling like your intimacy or sex life
-            is stale? Maybe there’s been infidelity? Or maybe you just need a
-            higher level of understanding and communication? There are many
-            reasons to seek couples counseling. Whatever the reason, know that
-            you are not alone.{" "}
+            <strong>Wondering where all the romance went?</strong> Or feeling
+            stuck in a relationship where “taking breaks” and the “silent
+            treatment” just aren’t working? Maybe you’re feeling like your
+            intimacy or sex life is stale? Maybe there’s been infidelity? Or
+            maybe you just need a
+            <em> higher level of understanding and communication?</em> There are
+            many reasons to seek couples counseling. Whatever the reason, know
+            that you are not alone.{" "}
           </p>
           <p>
-            We all know romantic relationships are hard work. Like cars, they
-            require regular maintenance to keep them running well. If there is a
-            problem, it’s best to have it repaired right away to avoid further
-            complications down the road.
+            We all know romantic relationships are hard work. Like cars, they{" "}
+            <strong>
+              require regular maintenance to keep them running well
+            </strong>
+            . If there is a problem, it’s best to have it repaired right away to
+            avoid further complications down the road.
           </p>
         </div>
 
@@ -83,15 +98,17 @@ function Couples() {
               <p>
                 Cognitive-behavioral therapy (CBT), which was originally
                 designed for individual use to treat such issues as anxiety,
-                depression , substance abuse, and eating disorders, centers
+                depression, substance abuse, and eating disorders, centers
                 around the notion that your thoughts influence your behaviors.
               </p>
               <p>
                 A CBT therapist will initially focus on identifying what each
                 partner is thinking about the conflicts that have brought them
-                to couples counseling. One&apos;s beliefs may be challenged in
-                order to help each partner develop better methods of
-                communicating.
+                to couples counseling.{" "}
+                <strong>
+                  One&apos;s beliefs may be challenged in order to help each
+                  partner develop better methods of communicating.
+                </strong>
               </p>
               <p>
                 Research has shown that CBT is effective in treating

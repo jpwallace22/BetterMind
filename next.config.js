@@ -9,5 +9,6 @@ module.exports = {
     NEXT_PUBLIC_CAPTCHA_KEY: process.env.NEXT_PUBLIC_CAPTCHA_KEY,
     CAPTCHA_SECRET_KEY: process.env.CAPTCHA_KEY,
     GMAIL_PASSWORD: process.env.GMAIL_PASSWORD,
+    MAILCHIMP_API: process.env.MAILCHIMP_API,
   },
 };

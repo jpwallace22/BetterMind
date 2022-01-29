@@ -19,7 +19,7 @@ export default async function sendEmail(req, res) {
 
     //creating the mailData
     const mailData = {
-      from: "jeb.gengenagel@gmail.com",
+      from: "BetterMind",
       to: "jpwallace22@gmail.com",
       subject: `BetterMind message from ${req.body.fname} ${req.body.lname}`,
       text: `${req.body.fname} ${req.body.lname} is interested in ${req.body.service} therapy. Contact them at ${req.body.phone} or ${req.body.email}`,
