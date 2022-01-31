@@ -2,21 +2,24 @@
 
 [<img src='public/images/preview-card.png' >](https://better-mind.vercel.app)
 
-## Or clone the repo and run it locally
+# A bit About the project
 
-First, from the root, run the development server:
+## My first NextJS site
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+First and foremost, I learned a LOT from this project. As my first NextJS project, got to see the nuances of the framework, its limitations, and of course its strengths.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result. You can make edits to the index.js to change the homepage, and each js file in the pages directory for the others.
+## Hindsight is 20/20
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello).
+Looking back, I can see a lot of ways to improve upon what I built here to save time, increase scalabity, and optimize performance. Over time I'm hoping to come back and refactor some of the problem spots and see if I cant continuously make it better as I learn more.
 
-> There are currently no API routes in this website
+## From a design perspective
+
+Looking at it from the eyes of a designer, I'm pretty pleased how it turned out. The brand feels strong, modern, and yet relaxed and the logo is responsive and multifaceted. If I was to adjust anything in the design it would probably be the light blue color. I feel it can use minor adjustments.
+
+## Lighthouse
+
+<br>
+<img src='public/images/lighthouse.webp' >
 
 ## Learn more about Nextjs
 
