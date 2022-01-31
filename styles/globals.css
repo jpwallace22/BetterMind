@@ -344,7 +344,8 @@ nav.footer-links {
   justify-content: center;
 }
 nav.footer-links a {
-  padding: 15px 8px 15px 0;
+  padding: 15px 20px 15px 0;
+  width: 100%;
 }
 nav.footer-links ul {
   width: 49%;
@@ -357,6 +358,7 @@ nav.footer-links ul li {
   font-weight: 400;
   margin: 15px 0;
   line-height: 1.2;
+  min-width: 48px;
 }
 nav.footer-links ul li:first-child {
   font-size: 1.25rem;
